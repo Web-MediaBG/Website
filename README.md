@@ -1,2 +1,2 @@
-# Dit is de officiële website van bovisgrafica
+# Dit is de officiële website van Bovis-Grafica
 
