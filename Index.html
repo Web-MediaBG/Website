@@ -65,8 +65,11 @@
         </div>
     </header>
     <main>
+        <!-- Door fixed menubar plaatsen we een anchor om er voor te zorgen 
+            dat de inhoud niet achter de bar verschijnt als je op de knop drukt -->
+        <a class="anchor" id="about"></a>
         <!-- Korte about us -->
-        <div class="container" id= "about">
+        <div class="container">
             <div class="inf">
                 <div class="inhoud-inf">
                     <div class="subtitle">
@@ -142,12 +145,12 @@
                             <img src="/Assets/PraesidiumFoto's/foto1-small.png" alt="" >
                         </div>
                         <div class="tekst-card">
-                            <h2>PREASES</h2>
+                            <h2>PRAESES</h2>
                             <h3>Willem claeys</h3>
                             <p>praeses@bovis-grafica.be</p>
                         </div>
                         <div class="knop-card">
-                            <button onclick="TekstWillem('TextWillem')">Meer info</button>
+                            <button onclick="Modal('TextWillem')">Meer info</button>
                         </div>
                     </div>
                 </div>
@@ -155,440 +158,602 @@
             <div class="card">
                 <div class="box">
                     <div class="content">
-                        <img src="/Assets/PraesidiumFoto's/foto1-small.png" alt="" >
-                        <h2>VICE-PREASES</h2>
-                        <h3>Annick Billiau</h3>
-                        <p>praeses@bovis-grafica.be</p>
-                        <button onclick="TekstWillem('TextAnnick')">Meer info</button>
+                        <div class="img-card">
+                            <img src="/Assets/PraesidiumFoto's/foto1-small.png" alt="" >
+                        </div>
+                        <div class="tekst-card">
+                            <h2>Vice-PRAESES</h2>
+                            <h3>Annick Billiau</h3>
+                            <p>vice-praeses@bovis-grafica.be</p>
+                        </div>
+                        <div class="knop-card">
+                            <button onclick="Modal('TextAnnick')">Meer info</button>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="box">
                     <div class="content">
-                        <img src="/images/praesidium/foto1-small.png" alt="" >
-                        <h2>VICE-PREASES</h2>
-                        <h3>Kevin Van Driel</h3>
-                        <p>praeses@bovis-grafica.be</p>
-                        <button onclick="TekstWillem('TextKevin')">Meer info</button>
+                        <div class="img-card">
+                            <img src="/Assets/PraesidiumFoto's/foto1-small.png" alt="" >
+                        </div>
+                        <div class="tekst-card">
+                            <h2>Vice-PRAESES</h2>
+                            <h3>Kevin Van Driel</h3>
+                            <p>vice-praeses@bovis-grafica.be</p>
+                        </div>
+                        <div class="knop-card">
+                            <button onclick="Modal('TextKevin')">Meer info</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <div class="content">
+                        <div class="img-card">
+                            <img src="/Assets/PraesidiumFoto's/foto1-small.png" alt="" >
+                        </div>
+                        <div class="tekst-card">
+                            <h2>Ab-Actis</h2>
+                            <h3>Frauke Codenie</h3>
+                            <p>ab-actis@bovis-grafica.be</p>
+                        </div>
+                        <div class="knop-card">
+                            <button onclick="Modal('TextFrauke')">Meer info</button>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="box">
                     <div class="content">
-                        <img src="/images/praesidium/foto1-small.png" alt="" >
-                        <h2>Ab-Actis</h2>
-                        <h3>Frauke Codenie</h3>
-                        <p>praeses@bovis-grafica.be</p>
-                        <button onclick="TekstWillem('TextFrauke')">Meer info</button>
+                        <div class="img-card">
+                            <img src="/Assets/PraesidiumFoto's/foto1-small.png" alt="" >
+                        </div>
+                        <div class="tekst-card">
+                            <h2>Quaestor</h2>
+                            <h3>Simon Put</h3>
+                            <p>quaestor@bovis-grafica.be</p>
+                        </div>
+                        <div class="knop-card">
+                            <button onclick="Modal('TextSimon')">Meer info</button>
+                        </div> 
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="box">
                     <div class="content">
-                        <img src="/images/praesidium/foto1-small.png" alt="" >
-                        <h2>Quaestor</h2>
-                        <h3>Simon Put</h3>
-                        <p>praeses@bovis-grafica.be</p>
-                        <button onclick="TekstWillem('TextSimon')">Meer info</button>
-                    </div>
-                </div>
-            </div>
-            
-            
-            <div class="card">
-                <div class="box">
-                    <div class="content">
-                        <img src="/images/praesidium/foto1-small.png" alt="" >
-                        <h2>Schachten - meester</h2>
-                        <h3>Dries Wynants</h3>
-                        <p>praeses@bovis-grafica.be</p>
-                        <button onclick="TekstWillem('TextDries')">Meer info</button>
+                        <div class="img-card">
+                            <img src="/Assets/PraesidiumFoto's/foto1-small.png" alt="" >
+                        </div>
+                        <div class="tekst-card">
+                            <h2>Schachten-meester</h2>
+                            <h3>Dries Wynants</h3>
+                            <p>schachtenmeester@bovis-grafica.be</p>
+                        </div>
+                        <div class="knop-card">
+                            <button onclick="Modal('TextDries')">Meer info</button>
+                        </div>  
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="box">
                     <div class="content">
-                        <img src="/images/praesidium/foto1-small.png" alt="" >
-                        <h2>Schachten - temmer</h2>
-                        <h3>Bernd Van Loon</h3>
-                        <p>praeses@bovis-grafica.be</p>
-                        <button onclick="TekstWillem('TextBernd')">Meer info</button>
+                        <div class="img-card">
+                            <img src="/Assets/PraesidiumFoto's/foto1-small.png" alt="" >
+                        </div>
+                        <div class="tekst-card">
+                            <h2>Schachten-temmer</h2>
+                            <h3>Mathias Mies</h3>
+                            <p>schachtenmeester@bovis-grafica.be</p>
+                        </div>
+                        <div class="knop-card">
+                            <button onclick="Modal('TextMathias')">Meer info</button>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="box">
                     <div class="content">
-                        <img src="/images/praesidium/foto1-small.png" alt="" >
-                        <h2>Schachten - temmer</h2>
-                        <h3>Mathias Mies</h3>
-                        <p>praeses@bovis-grafica.be</p>
-                        <button onclick="TekstWillem('TextMathias')">Meer info</button>
+                        <div class="img-card">
+                            <img src="/Assets/PraesidiumFoto's/foto1-small.png" alt="" >
+                        </div>
+                        <div class="tekst-card">
+                            <h2>Schachten-temmer</h2>
+                            <h3>Bernd Van Loon</h3>
+                            <p>schachtenmeester@bovis-grafica.be</p>
+                        </div>
+                        <div class="knop-card">
+                            <button onclick="Modal('TextBernd')">Meer info</button>
+                        </div> 
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="box">
                     <div class="content">
-                        <img src="/images/praesidium/foto1-small.png" alt="" >
-                        <h2>PR & Zeden - meesteres</h2>
-                        <h3>Laura Goris</h3>
-                        <p>praeses@bovis-grafica.be</p>
-                        <button onclick="TekstWillem('TextLaura')">Meer info</button>
+                        <div class="img-card">
+                            <img src="/Assets/PraesidiumFoto's/foto1-small.png" alt="">
+                        </div>
+                        <div class="tekst-card">
+                            <h2>Pr & Zedenmeesteres</h2>
+                            <h3>Laura Goris</h3>
+                            <p>zedenmeester@bovis-grafica.be</p>
+                            <p>pr@bovis-grafica.be</p>
+                        </div>
+                        <div class="knop-card">
+                            <button onclick="Modal('TextLaura')">Meer info</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <div class="content">
+                        <div class="img-card">
+                            <img src="/Assets/PraesidiumFoto's/foto1-small.png" alt="">
+                        </div>
+                        <div class="tekst-card">
+                            <h2>Pr</h2>
+                            <h3>Hannelie Somers</h3>
+                            <p>pr@bovis-grafica.be</p>
+                        </div>
+                        <div class="knop-card">
+                            <button onclick="Modal('TextHannelie')">Meer info</button>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="box">
                     <div class="content">
-                        <img src="/images/praesidium/foto1-small.png" alt="" >
-                        <h2>PR</h2>
-                        <h3>Hannelie Somers</h3>
-                        <p>praeses@bovis-grafica.be</p>
-                        <button onclick="TekstWillem('TextHannelie')">Meer info</button>
+                        <div class="img-card">
+                            <img src="/Assets/PraesidiumFoto's/foto1-small.png" alt="">
+                        </div>
+                        <div class="tekst-card">
+                            <h2>Feest</h2>
+                            <h3>Flore Koloszewski</h3>
+                            <p>feest@bovis-grafica.be</p>
+                        </div>
+                        <div class="knop-card">
+                            <button onclick="Modal('TextFlore')">Meer info</button>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="box">
                     <div class="content">
-                        <img src="/images/praesidium/foto1-small.png" alt="" >
-                        <h2>Feest</h2>
-                        <h3>Eva Diels</h3>
-                        <p>praeses@bovis-grafica.be</p>
-                        <button onclick="TekstWillem('TextEva')">Meer info</button>
+                        <div class="img-card">
+                            <img src="/Assets/PraesidiumFoto's/foto1-small.png" alt="">
+                        </div>
+                        <div class="tekst-card">
+                            <h2>Feest</h2>
+                            <h3>Eva Diels</h3>
+                            <p>feest@bovis-grafica.be</p>
+                        </div>
+                        <div class="knop-card">
+                            <button onclick="Modal('TextEva')">Meer info</button>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="box">
                     <div class="content">
-                        <img src="/images/praesidium/foto1-small.png" alt="" >
-                        <h2>Feest</h2>
-                        <h3>Flore Koloszewski</h3>
-                        <p>praeses@bovis-grafica.be</p>
-                        <button onclick="TekstWillem('TextFlore')">Meer info</button>
+                        <div class="img-card">
+                            <img src="/Assets/PraesidiumFoto's/foto1-small.png" alt="">
+                        </div>
+                        <div class="tekst-card">
+                            <h2>Web-Media</h2>
+                            <h3>Yorgi De Schrijver</h3>
+                            <p>web-media@bovis-grafica.be</p>
+                        </div>
+                        <div class="knop-card">
+                            <button onclick="Modal('TextYorgi')">Meer info</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <div class="content">
+                        <div class="img-card">
+                            <img src="/Assets/PraesidiumFoto's/foto1-small.png" alt="">
+                        </div>
+                        <div class="tekst-card">
+                            <h2>Soc</h2>
+                            <h3>Lise Pepermans</h3>
+                            <p>soc@bovis-grafica.be</p>
+                        </div>
+                        <div class="knop-card">
+                            <button onclick="Modal('TextLise')">Meer info</button>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="box">
                     <div class="content">
-                        <img src="/images/praesidium/foto1-small.png" alt="" >
-                        <h2>Web & Media</h2>
-                        <h3>Yorgi De Schrijver</h3>
-                        <p>praeses@bovis-grafica.be</p>
-                        <button onclick="TekstWillem('TextYorgi')">Meer info</button>
+                        <div class="img-card">
+                            <img src="/Assets/PraesidiumFoto's/foto1-small.png" alt="">
+                        </div>
+                        <div class="tekst-card">
+                            <h2>Cantor</h2>
+                            <h3>João Pedro Dal Bosco</h3>
+                        </div>
+                        <div class="knop-card">
+                            <button onclick="Modal('TextSkippy')">Meer info</button>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="box">
                     <div class="content">
-                        <img src="/images/praesidium/foto1-small.png" alt="" >
-                        <h2>SOC</h2>
-                        <h3>Lise Pepermans</h3>
-                        <p>praeses@bovis-grafica.be</p>
-                        <button onclick="TekstWillem('TextLise')">Meer info</button>
+                        <div class="img-card">
+                            <img src="/Assets/PraesidiumFoto's/foto1-small.png" alt="">
+                        </div>
+                        <div class="tekst-card">
+                            <h2>Meter</h2>
+                            <h3>Fleur Stynen</h3>
+                        </div>
+                        <div class="knop-card">
+                            <button onclick="Modal('TextFleur')">Meer info</button>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="box">
                     <div class="content">
-                        <img src="/images/praesidium/foto1-small.png" alt="" >
-                        <h2>Cantor</h2>
-                        <h3>João Pedro Dal Bosco</h3>
-                        <p>praeses@bovis-grafica.be</p>
-                        <button onclick="TekstWillem('TextSkippy')">Meer info</button>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="box">
-                    <div class="content">
-                        <img src="/images/praesidium/foto1-small.png" alt="" >
-                        <h2>Meter</h2>
-                        <h3>Fleur Stynen</h3>
-                        <p>praeses@bovis-grafica.be</p>
-                        <button onclick="TekstWillem('TextFleur')">Meer info</button>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="box">
-                    <div class="content">
-                        <img src="/images/praesidium/foto1-small.png" alt="" >
-                        <h2>Ere-Cantor</h2>
-                        <h3>Sebastiaan Verhoeven</h3>
-                        <p>praeses@bovis-grafica.be</p>
-                        <button onclick="TekstWillem('TextSeba')">Meer info</button>
+                        <div class="img-card">
+                            <img src="/Assets/PraesidiumFoto's/foto1-small.png" alt="">
+                        </div>
+                        <div class="tekst-card">
+                            <h2>Ere-cantor</h2>
+                            <h3>Sebastiaan Verhoeven</h3>
+                        </div>
+                        <div class="knop-card">
+                            <button onclick="Modal('TextSeba')">Meer info</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        
-        <!-- The Modal -->
-    <div id="TextWillem" class="modal">
-        <!-- Modal content -->
-          <div class="modal-content">
-              <div class="modal-header">
-                  <h2>Willem Claeys</h2>
-                  <span class="closeM" onclick="Close()">&times;</span>
-              </div>
-              <div class="modal-body">
-                  <p>Some text in the Modal Body</p>
-              </div>
-              <div class="modal-footer">
-                  <h3>Modal Footer</h3>
-              </div>
-          </div>
-      </div>
-      <div id="TextAnnick" class="modal">
-          <!-- Modal content -->
-          <div class="modal-content">
-              <div class="modal-header">
-                  <h2>Annick Billiau</h2>
-                  <span class="closeM" onclick="Close()">&times;</span>
-              </div>
-              <div class="modal-body">
-                  <p>Some text in the Modal Body</p>
-              </div>
-              <div class="modal-footer">
-                  <h3>Modal Footer</h3>
-              </div>
-          </div>
-      </div>
-      <div id="TextKevin" class="modal">
-          <!-- Modal content -->
-          <div class="modal-content">
-              <div class="modal-header">
-                  <h2>Kevin Van Driel</h2>
-                  <span class="closeM" onclick="Close()">&times;</span>
-              </div>
-              <div class="modal-body">
-                  <p>Some text in the Modal Body</p>
-              </div>
-              <div class="modal-footer">
-                  <h3>Modal Footer</h3>
-              </div>
-          </div>
-      </div>
-      <div id="TextSimon" class="modal">
-          <!-- Modal content -->
-          <div class="modal-content">
-              <div class="modal-header">
-                  <h2>Simon Put</h2>
-                  <span class="closeM" onclick="Close()">&times;</span>
-              </div>
-              <div class="modal-body">
-                  <p>Some text in the Modal Body</p>
-              </div>
-              <div class="modal-footer">
-                  <h3>Modal Footer</h3>
-              </div>
-          </div>
-      </div>
-      <div id="TextFrauke" class="modal">
-          <!-- Modal content -->
-          <div class="modal-content">
-              <div class="modal-header">
-                  <h2>Frauke Codenie</h2>
-                  <span class="closeM" onclick="Close()">&times;</span>
-              </div>
-              <div class="modal-body">
-                  <p>Some text in the Modal Body</p>
-              </div>
-              <div class="modal-footer">
-                  <h3>Modal Footer</h3>
-              </div>
-          </div>
-      </div>
-      <div id="TextDries" class="modal">
-          <!-- Modal content -->
-          <div class="modal-content">
-              <div class="modal-header">
-                  <h2>Dries Wynants</h2>
-                  <span class="closeM" onclick="Close()">&times;</span>
-              </div>
-              <div class="modal-body">
-                  <p>Some text in the Modal Body</p>
-              </div>
-              <div class="modal-footer">
-                  <h3>Modal Footer</h3>
-              </div>
-          </div>
-      </div>
-      <div id="TextBernd" class="modal">
-          <!-- Modal content -->
-          <div class="modal-content">
-              <div class="modal-header">
-                  <h2>Bernd Van Loon</h2>
-                  <span class="closeM" onclick="Close()">&times;</span>
-              </div>
-              <div class="modal-body">
-                  <p>Some text in the Modal Body</p>
-              </div>
-              <div class="modal-footer">
-                  <h3>Modal Footer</h3>
-              </div>
-          </div>
-      </div>
-      <div id="TextMathias" class="modal">
-          <!-- Modal content -->
-          <div class="modal-content">
-              <div class="modal-header">
-                  <h2>Mathias Mies</h2>
-                  <span class="closeM" onclick="Close()">&times;</span>
-              </div>
-              <div class="modal-body">
-                  <p>Some text in the Modal Body</p>
-              </div>
-              <div class="modal-footer">
-                  <h3>Modal Footer</h3>
-              </div>
-          </div>
-      </div>
-      <div id="TextLaura" class="modal">
-          <!-- Modal content -->
-          <div class="modal-content">
-              <div class="modal-header">
-                  <h2>Laura Goris</h2>
-                  <span class="closeM" onclick="Close()">&times;</span>
-              </div>
-              <div class="modal-body">
-                  <p>Some text in the Modal Body</p>
-              </div>
-              <div class="modal-footer">
-                  <h3>Modal Footer</h3>
-              </div>
-          </div>
-      </div>
-      <div id="TextHannelie" class="modal">
-          <!-- Modal content -->
-          <div class="modal-content">
-              <div class="modal-header">
-                  <h2>Hannelie Somers</h2>
-                  <span class="closeM" onclick="Close()">&times;</span>
-              </div>
-              <div class="modal-body">
-                  <p>Some text in the Modal Body</p>
-              </div>
-              <div class="modal-footer">
-                  <h3>Modal Footer</h3>
-              </div>
-          </div>
-      </div>
-      <div id="TextEva" class="modal">
-          <!-- Modal content -->
-          <div class="modal-content">
-              <div class="modal-header">
-                  <h2>Eva Diels</h2>
-                  <span class="closeM" onclick="Close()">&times;</span>
-              </div>
-              <div class="modal-body">
-                  <p>Some text in the Modal Body</p>
-              </div>
-              <div class="modal-footer">
-                  <h3>Modal Footer</h3>
-              </div>
-          </div>
-      </div>
-      <div id="TextFlore" class="modal">
-          <!-- Modal content -->
-          <div class="modal-content">
-              <div class="modal-header">
-                  <h2>Flore Koloszewski</h2>
-                  <span class="closeM" onclick="Close()">&times;</span>
-              </div>
-              <div class="modal-body">
-                  <p>Some text in the Modal Body</p>
-              </div>
-              <div class="modal-footer">
-                  <h3>Modal Footer</h3>
-              </div>
-          </div>
-      </div>
-      <div id="TextYorgi" class="modal">
-          <!-- Modal content -->
-          <div class="modal-content">
-              <div class="modal-header">
-                  <h2>Yorgi De Schrijver</h2>
-                  <span class="closeM" onclick="Close()">&times;</span>
-              </div>
-              <div class="modal-body">
-                  <p>Some text in the Modal Body</p>
-              </div>
-              <div class="modal-footer">
-                  <h3>Modal Footer</h3>
-              </div>
-          </div>
-      </div>
-      <div id="TextLise" class="modal">
-          <!-- Modal content -->
-          <div class="modal-content">
-              <div class="modal-header">
-                  <h2>Lise Pepermans</h2>
-                  <span class="closeM" onclick="Close()">&times;</span>
-              </div>
-              <div class="modal-body">
-                  <p>Some text in the Modal Body</p>
-              </div>
-              <div class="modal-footer">
-                  <h3>Modal Footer</h3>
-              </div>
-          </div>
-      </div>
-      <div id="TextSkippy" class="modal">
-          <!-- Modal content -->
-          <div class="modal-content">
-              <div class="modal-header">
-                  <h2>João Pedro Dal Bosco</h2>
-                  <span class="closeM" onclick="Close()">&times;</span>
-              </div>
-              <div class="modal-body">
-                  <p>Some text in the Modal Body</p>
-              </div>
-              <div class="modal-footer">
-                  <h3>Modal Footer</h3>
-              </div>
-          </div>
-      </div>
-      <div id="TextFleur" class="modal">
-          <!-- Modal content -->
-          <div class="modal-content">
-              <div class="modal-header">
-                  <h2>Fleur Stynen</h2>
-                  <span class="closeM" onclick="Close()">&times;</span>
-              </div>
-              <div class="modal-body">
-                  <p>Some text in the Modal Body</p>
-              </div>
-              <div class="modal-footer">
-                  <h3>Modal Footer</h3>
-              </div>
-          </div>
-      </div>
-      <div id="TextSeba" class="modal">
-          <!-- Modal content -->
-          <div class="modal-content">
-              <div class="modal-header">
-                  <h2>Sebastiaan Verhoeven</h2>
-                  <span class="closeM" onclick="Close()">&times;</span>
-              </div>
-              <div class="modal-body">
-                  <p>Some text in the Modal Body</p>
-              </div>
-              <div class="modal-footer">
-                  <h3>Modal Footer</h3>
-              </div>
-          </div>
-      </div>
+        <!-- The Modals -->
+        <div id="TextWillem" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Willem claeys - Praeses</h2>
+                </div>
+                <div class="modal-body">
+                    <table>
+                        <tr>
+                            <td class="vraag">Naam:</td>
+                            <td class="antwoord">Willem</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <a class="closeM" onclick="Close()">Sluiten</a>
+                </div>
+            </div>
+        </div>
+        <div id="TextAnnick" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Annick Billiau - Vice-Praeses</h2>
+                </div>
+                <div class="modal-body">
+                    <table>
+                        <tr>
+                            <td class="vraag">Naam:</td>
+                            <td class="antwoord">Willem</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <a class="closeM" onclick="Close()">Sluiten</a>
+                </div>
+            </div>
+        </div>
+        <div id="TextKevin" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Kevin Van Driel - Vice-Praeses</h2>
+                </div>
+                <div class="modal-body">
+                    <table>
+                        <tr>
+                            <td class="vraag">Naam:</td>
+                            <td class="antwoord">Willem</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <a class="closeM" onclick="Close()">Sluiten</a>
+                </div>
+            </div>
+        </div>
+        <div id="TextFrauke" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Frauke Codenie - Ab-Actis</h2>
+                </div>
+                <div class="modal-body">
+                    <table>
+                        <tr>
+                            <td class="vraag">Naam:</td>
+                            <td class="antwoord">Willem</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <a class="closeM" onclick="Close()">Sluiten</a>
+                </div>
+            </div>
+        </div>
+        <div id="TextSimon" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Simon Put - Quaestor</h2>
+                </div>
+                <div class="modal-body">
+                    <table>
+                        <tr>
+                            <td class="vraag">Naam:</td>
+                            <td class="antwoord">Willem</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <a class="closeM" onclick="Close()">Sluiten</a>
+                </div>
+            </div>
+        </div>
+        <div id="TextDries" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Dries Wynants - Schachtenmeester</h2>
+                </div>
+                <div class="modal-body">
+                    <table>
+                        <tr>
+                            <td class="vraag">Naam:</td>
+                            <td class="antwoord">Willem</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <a class="closeM" onclick="Close()">Sluiten</a>
+                </div>
+            </div>
+        </div>
+        <div id="TextMathias" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Mathias Mies - Schachtentemmer</h2>
+                </div>
+                <div class="modal-body">
+                    <table>
+                        <tr>
+                            <td class="vraag">Naam:</td>
+                            <td class="antwoord">Willem</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <a class="closeM" onclick="Close()">Sluiten</a>
+                </div>
+            </div>
+        </div>
+        <div id="TextBernd" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Bernd Van Loon - Schachtentemmer</h2>
+                </div>
+                <div class="modal-body">
+                    <table>
+                        <tr>
+                            <td class="vraag">Naam:</td>
+                            <td class="antwoord">Willem</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <a class="closeM" onclick="Close()">Sluiten</a>
+                </div>
+            </div>
+        </div>
+        <div id="TextLaura" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Laura Goris - Pr & Zedenmeesteres</h2>
+                </div>
+                <div class="modal-body">
+                    <table>
+                        <tr>
+                            <td class="vraag">Naam:</td>
+                            <td class="antwoord">Willem</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <a class="closeM" onclick="Close()">Sluiten</a>
+                </div>
+            </div>
+        </div>
+        <div id="TextHannelie" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Hannelie Somers - PR</h2>
+                </div>
+                <div class="modal-body">
+                    <table>
+                        <tr>
+                            <td class="vraag">Naam:</td>
+                            <td class="antwoord">Willem</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <a class="closeM" onclick="Close()">Sluiten</a>
+                </div>
+            </div>
+        </div>
+        <div id="TextFlore" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Flore Koloszewski - Feest</h2>
+                </div>
+                <div class="modal-body">
+                    <table>
+                        <tr>
+                            <td class="vraag">Naam:</td>
+                            <td class="antwoord">Willem</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <a class="closeM" onclick="Close()">Sluiten</a>
+                </div>
+            </div>
+        </div>
+        <div id="TextEva" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Eva Diels - Feest</h2>
+                </div>
+                <div class="modal-body">
+                    <table>
+                        <tr>
+                            <td class="vraag">Naam:</td>
+                            <td class="antwoord">Willem</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <a class="closeM" onclick="Close()">Sluiten</a>
+                </div>
+            </div>
+        </div>
+        <div id="TextYorgi" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Yorgi De Schrijver - Web-Media</h2>
+                </div>
+                <div class="modal-body">
+                    <table>
+                        <tr>
+                            <td class="vraag">Naam:</td>
+                            <td class="antwoord">Willem</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <a class="closeM" onclick="Close()">Sluiten</a>
+                </div>
+            </div>
+        </div>
+        <div id="TextLise" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Lise Pepermans - SOC</h2>
+                </div>
+                <div class="modal-body">
+                    <table>
+                        <tr>
+                            <td class="vraag">Naam:</td>
+                            <td class="antwoord">Willem</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <a class="closeM" onclick="Close()">Sluiten</a>
+                </div>
+            </div>
+        </div>
+        <div id="TextSkippy" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>João Pedro Dal Bosco - Cantor</h2>
+                </div>
+                <div class="modal-body">
+                    <table>
+                        <tr>
+                            <td class="vraag">Naam:</td>
+                            <td class="antwoord">Willem</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <a class="closeM" onclick="Close()">Sluiten</a>
+                </div>
+            </div>
+        </div>
+        <div id="TextFleur" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Fleur - Meter</h2>
+                </div>
+                <div class="modal-body">
+                    <table>
+                        <tr>
+                            <td class="vraag">Naam:</td>
+                            <td class="antwoord">Willem</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <a class="closeM" onclick="Close()">Sluiten</a>
+                </div>
+            </div>
+            <div id="TextSeba" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Sebastiaan Verhoeven - Ere-Cantor</h2>
+                    </div>
+                    <div class="modal-body">
+                        <table>
+                            <tr>
+                                <td class="vraag">Naam:</td>
+                                <td class="antwoord">Willem</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <a class="closeM" onclick="Close()">Sluiten</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
     </main>
     <footer>
         <svg viewBox="0 -20 700 110" width="100%" height="110" preserveAspectRatio="none">
@@ -610,5 +775,6 @@
         </div>
     </footer>
 </body>
+<script type="text/javascript" src="/Javascript/Slideshow.js"></script>
 <script type="text/javascript" src="/Javascript/Script.js"></script>
 </html>
