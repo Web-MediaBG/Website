@@ -21,21 +21,22 @@
                     <a class="logo" href="/"><img class="logo_bovis" src="../Assets/Schild_Bovis-Grafica.png" alt="logo"></a>
                     <nav>
                         <ul class="nav__links">
-                            <a href="../" class="nav_active">Home</a>
+                            <a href="#" class="nav_active">Home</a>
                             <div class="dropdown">
-                                <a class="dropbtn">Over ons</a><i class="fa fa-caret-down"></i>
+                                <a class="dropbtn" href="#">Over ons</a><i class="fa fa-caret-down"></i>
                                 <div class="dropdown-content">
-                                    <a href="../Clublied">Praesidium 2021-2022</a>
-                                    <a href="../Geschiedenis">Geschiedenis</a>
-                                    <a href="../Clublied">Clublied</a> 
+                                    <a href="#Praesidium">Praesidium 2021-2022</a>
+                                    <a href="./Over ons/Oud Praesidium/">Oud Praesidium</a>
+                                    <a href="./Over ons/Geschiedenis">Geschiedenis</a>
+                                    <a href="./Over ons/Clublied">Clublied</a> 
                                 </div>
                             </div>
                             <div class="dropdown">
                                 <a class="dropbtn">Partners</a><i class="fa fa-caret-down"></i>
                                 <div class="dropdown-content">
-                                    <a href="../Sponsers">Sponsors</a>
-                                    <a href="../Voordelen">Voordelen</a>
-                                    <a href="../Trooper">Trooper</a>
+                                    <a href="./Partners/Sponsors/">Sponsors</a>
+                                    <a href="./Partners/Voordelen/">Voordelen</a>
+                                    <a href="./Partners/Trooper/">Trooper</a>
                                 </div>
                             </div>
                             <a href="../Kalender">Kalender</a>
@@ -44,16 +45,33 @@
                     <a class="cta" href="#">Inschrijven</a>
                     <p class="menu cta">Menu</p>
                 </div>
+                <!-- MOBILE MENU -->
                 <div class="overlay">
                     <a class="close">&times;</a>
                     <div class="overlay__content">
-                            <a href="Index.html" class="nav_active">Home</a>
-                            <a href="Html/Geschiedenis.html">Geschiedenis</a>
-                            <a href="Html/Clublied.html">Clublied</a>
-                            <a href="Html/Sponsers.html">Sponsors</a>
-                            <a href="Html/Kalender.html">Kalender</a>
-                            <a href="Html/Voordelen.html">Voordelen</a>
-                            <a href="Html/Trooper.html">Trooper</a>
+                        <a href="" class="nav_active">Home</a>
+                        <a class="Overons">Over ons</a>
+                        <a class="Partners">Partners</a>
+                        <a href="/Kalender/">Kalender</a>
+                    </div>
+                </div>
+                <!-- MOBILE SUBMENU 1 -->
+                <div class="overlay1">
+                    <a class="Back1">&lt;</a>
+                    <div class="overlay__content">
+                        <a href="#Praesidium" class="Praesidium">Praesidium 2021-2022</a>
+                        <a href="/Over ons/Oud Praesidium/">Oud Praesidium</a>
+                        <a href="/Over ons/Geschiedenis/">Geschiedenis</a>
+                        <a href="/Over ons/Clublied/">Clublied</a>
+                    </div>
+                </div>
+                <!-- MOBILE SUBMENU 2 -->
+                <div class="overlay2">
+                    <a class="Back2">&lt;</a>
+                    <div class="overlay__content">
+                        <a href="/Partners/Sponsors/">Sponsors</a>
+                        <a href="/Partners/Voordelen/">Voordelen</a>
+                        <a href="/Partners/Trooper/">Trooper</a>
                     </div>
                 </div>
             </div>
@@ -118,21 +136,19 @@
         <div class="slideshow-container">
             <!-- Afbeeldingen op voledige grootte, copy paste voor meer foto's -->
             <div class="mySlides fade">
-            <img src="images/banner-1.png" style="width:100%">
+            <img src="Assets/EvenementenBanners/banner-1.png" style="width:100%">
             </div>
         
             <div class="mySlides fade">
-            <img src="images/banner-2.png" style="width:100%">
+            <img src="Assets/EvenementenBanners/banner-2.png" style="width:100%">
             </div>
         
             <div class="mySlides fade">
-            <img src="images/banner-3.png" style="width:100%">
+            <img src="Assets/EvenementenBanners/banner-3.png" style="width:100%">
             </div>
-        
-            <!-- Volgende en vorige knoppen -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
+        <!-- ANCHOR PREASIDIUM-->
+        <a class="anchor2" id="Praesidium"></a>
         <!-- PREASIDIUM -->
         <div class="PresTitle">
             <h1>Praesidium</h1>
@@ -146,8 +162,10 @@
                         </div>
                         <div class="tekst-card">
                             <h2>PRAESES</h2>
-                            <h3>Willem claeys</h3>
-                            <p>praeses@bovis-grafica.be</p>
+                            <div class="info">
+                                <h3>Willem claeys</h3>
+                                <p>praeses@bovis-grafica.be</p>
+                            </div>
                         </div>
                         <div class="knop-card">
                             <button onclick="Modal('TextWillem')">Meer info</button>
@@ -163,8 +181,10 @@
                         </div>
                         <div class="tekst-card">
                             <h2>Vice-PRAESES</h2>
-                            <h3>Annick Billiau</h3>
-                            <p>vice-praeses@bovis-grafica.be</p>
+                            <div class="info">
+                                <h3>Annick Billiau</h3>
+                                <p>vice-praeses@bovis-grafica.be</p>
+                            </div>
                         </div>
                         <div class="knop-card">
                             <button onclick="Modal('TextAnnick')">Meer info</button>
@@ -180,8 +200,10 @@
                         </div>
                         <div class="tekst-card">
                             <h2>Vice-PRAESES</h2>
-                            <h3>Kevin Van Driel</h3>
-                            <p>vice-praeses@bovis-grafica.be</p>
+                            <div class="info">
+                                <h3>Kevin Van Driel</h3>
+                                <p>vice-praeses@bovis-grafica.be</p>
+                            </div>
                         </div>
                         <div class="knop-card">
                             <button onclick="Modal('TextKevin')">Meer info</button>
@@ -198,8 +220,10 @@
                         </div>
                         <div class="tekst-card">
                             <h2>Ab-Actis</h2>
-                            <h3>Frauke Codenie</h3>
-                            <p>ab-actis@bovis-grafica.be</p>
+                            <div class="info">
+                                <h3>Frauke Codenie</h3>
+                                <p>ab-actis@bovis-grafica.be</p>
+                            </div>
                         </div>
                         <div class="knop-card">
                             <button onclick="Modal('TextFrauke')">Meer info</button>
@@ -215,8 +239,11 @@
                         </div>
                         <div class="tekst-card">
                             <h2>Quaestor</h2>
-                            <h3>Simon Put</h3>
-                            <p>quaestor@bovis-grafica.be</p>
+                            <div class="info">
+                                <h3>Simon Put</h3>
+                                <p>quaestor@bovis-grafica.be</p>
+                            </div>
+                            
                         </div>
                         <div class="knop-card">
                             <button onclick="Modal('TextSimon')">Meer info</button>
@@ -232,8 +259,10 @@
                         </div>
                         <div class="tekst-card">
                             <h2>Schachten-meester</h2>
-                            <h3>Dries Wynants</h3>
-                            <p>schachtenmeester@bovis-grafica.be</p>
+                            <div class="info">
+                                <h3>Dries Wynants</h3>
+                                <p>schachtenmeester@bovis-grafica.be</p>
+                            </div>
                         </div>
                         <div class="knop-card">
                             <button onclick="Modal('TextDries')">Meer info</button>
@@ -249,8 +278,10 @@
                         </div>
                         <div class="tekst-card">
                             <h2>Schachten-temmer</h2>
-                            <h3>Mathias Mies</h3>
-                            <p>schachtenmeester@bovis-grafica.be</p>
+                            <div class="info">
+                                <h3>Mathias Mies</h3>
+                                <p>schachtenmeester@bovis-grafica.be</p>
+                            </div>
                         </div>
                         <div class="knop-card">
                             <button onclick="Modal('TextMathias')">Meer info</button>
@@ -266,8 +297,10 @@
                         </div>
                         <div class="tekst-card">
                             <h2>Schachten-temmer</h2>
-                            <h3>Bernd Van Loon</h3>
-                            <p>schachtenmeester@bovis-grafica.be</p>
+                            <div class="info">
+                                <h3>Bernd Van Loon</h3>
+                                <p>schachtenmeester@bovis-grafica.be</p>
+                            </div>
                         </div>
                         <div class="knop-card">
                             <button onclick="Modal('TextBernd')">Meer info</button>
@@ -283,9 +316,11 @@
                         </div>
                         <div class="tekst-card">
                             <h2>Pr & Zedenmeesteres</h2>
-                            <h3>Laura Goris</h3>
-                            <p>zedenmeester@bovis-grafica.be</p>
-                            <p>pr@bovis-grafica.be</p>
+                            <div class="info">
+                                <h3>Laura Goris</h3>
+                                <p>zedenmeester@bovis-grafica.be</p>
+                                <p>pr@bovis-grafica.be</p>
+                            </div>
                         </div>
                         <div class="knop-card">
                             <button onclick="Modal('TextLaura')">Meer info</button>
@@ -302,8 +337,10 @@
                         </div>
                         <div class="tekst-card">
                             <h2>Pr</h2>
-                            <h3>Hannelie Somers</h3>
-                            <p>pr@bovis-grafica.be</p>
+                            <div class="info">
+                                <h3>Hannelie Somers</h3>
+                                <p>pr@bovis-grafica.be</p>  
+                            </div>
                         </div>
                         <div class="knop-card">
                             <button onclick="Modal('TextHannelie')">Meer info</button>
@@ -319,8 +356,10 @@
                         </div>
                         <div class="tekst-card">
                             <h2>Feest</h2>
-                            <h3>Flore Koloszewski</h3>
-                            <p>feest@bovis-grafica.be</p>
+                            <div class="info">
+                                <h3>Flore Koloszewski</h3>
+                                <p>feest@bovis-grafica.be</p>
+                            </div>
                         </div>
                         <div class="knop-card">
                             <button onclick="Modal('TextFlore')">Meer info</button>
@@ -336,8 +375,10 @@
                         </div>
                         <div class="tekst-card">
                             <h2>Feest</h2>
-                            <h3>Eva Diels</h3>
-                            <p>feest@bovis-grafica.be</p>
+                            <div class="info">
+                                <h3>Eva Diels</h3>
+                                <p>feest@bovis-grafica.be</p> 
+                            </div>
                         </div>
                         <div class="knop-card">
                             <button onclick="Modal('TextEva')">Meer info</button>
@@ -353,14 +394,15 @@
                         </div>
                         <div class="tekst-card">
                             <h2>Web-Media</h2>
-                            <h3>Yorgi De Schrijver</h3>
-                            <p>web-media@bovis-grafica.be</p>
+                            <div class="info">
+                                <h3>Yorgi De Schrijver</h3>
+                                <p>web-media@bovis-grafica.be</p>
+                            </div>
                         </div>
                         <div class="knop-card">
                             <button onclick="Modal('TextYorgi')">Meer info</button>
                         </div>
                     </div>
-                    
                 </div>
             </div>
             <div class="card">
@@ -371,8 +413,10 @@
                         </div>
                         <div class="tekst-card">
                             <h2>Soc</h2>
-                            <h3>Lise Pepermans</h3>
-                            <p>soc@bovis-grafica.be</p>
+                            <div class="info">
+                                <h3>Lise Pepermans</h3>
+                                <p>soc@bovis-grafica.be</p>
+                            </div>
                         </div>
                         <div class="knop-card">
                             <button onclick="Modal('TextLise')">Meer info</button>
@@ -388,7 +432,9 @@
                         </div>
                         <div class="tekst-card">
                             <h2>Cantor</h2>
-                            <h3>João Pedro Dal Bosco</h3>
+                            <div class="info">
+                                <h3>João Pedro Dal Bosco</h3>
+                            </div>
                         </div>
                         <div class="knop-card">
                             <button onclick="Modal('TextSkippy')">Meer info</button>
@@ -404,7 +450,9 @@
                         </div>
                         <div class="tekst-card">
                             <h2>Meter</h2>
-                            <h3>Fleur Stynen</h3>
+                            <div class="info">
+                               <h3>Fleur Stynen</h3> 
+                            </div>
                         </div>
                         <div class="knop-card">
                             <button onclick="Modal('TextFleur')">Meer info</button>
@@ -420,7 +468,9 @@
                         </div>
                         <div class="tekst-card">
                             <h2>Ere-cantor</h2>
-                            <h3>Sebastiaan Verhoeven</h3>
+                            <div class="info">
+                                <h3>Sebastiaan Verhoeven</h3>
+                            </div>
                         </div>
                         <div class="knop-card">
                             <button onclick="Modal('TextSeba')">Meer info</button>

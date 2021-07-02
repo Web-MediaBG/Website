@@ -125,7 +125,7 @@ h6 {
 }
 
 .nav__links a:hover {
-  color: Green;
+  color: #0E8943;
   font-size: 24px;
 }
 
@@ -133,7 +133,7 @@ h6 {
   padding: 9px 25px;
   position: relative;
   z-index: 1;
-  background-color: rgba(0, 136, 169, 1);
+  background-color: #0E8943;
   color: white;
   border: none;
   border-radius: 50px;
@@ -142,7 +142,7 @@ h6 {
 }
 
 .cta:hover {
-  background-color: rgba(0, 136, 169, 0.8);
+  background-color: rgb(14, 137, 67, 0.8);
 }
 
 /* Drop down */
@@ -191,7 +191,7 @@ display: block;
 }
 
 .dropdown:hover .dropbtn{
-    color: Green;
+    color: #0E8943;
     font-size: 24px;
     transition: color 0.3s ease 0s;
     cursor: pointer;
@@ -215,6 +215,30 @@ display: block;
   transition: width 0.5s ease 0s;
 }
 
+.overlay1 {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 50000;
+  left: 0;
+  top: 0;
+  background-color: #24252a;
+  overflow-x: hidden;
+  transition: width 0.5s ease 0s;
+}
+
+.overlay2 {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 50000;
+  left: 0;
+  top: 0;
+  background-color: #24252a;
+  overflow-x: hidden;
+  transition: width 0.5s ease 0s;
+}
+
 .overlay--active {
   width: 100%;
 }
@@ -222,12 +246,33 @@ display: block;
 .overlay__content {
   display: flex;
   height: 100%;
+  text-align: center;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
 .overlay a {
+  cursor: pointer;
+  color: #edf0f1;
+  padding: 15px;
+  font-size: 36px;
+  display: block;
+  transition: color 0.3s ease 0s;
+}
+
+.overlay1 a {
+  cursor: pointer;
+  color: #edf0f1;
+  padding: 15px;
+  font-size: 36px;
+  display: block;
+  transition: color 0.3s ease 0s;
+}
+
+.overlay2 a {
+  cursor: pointer;
+  color: #edf0f1;
   padding: 15px;
   font-size: 36px;
   display: block;
@@ -247,9 +292,28 @@ display: block;
   color: #edf0f1;
 }
 
+.overlay1 .Back1 {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: #edf0f1;
+}
+
+.overlay2 .Back2 {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: #edf0f1;
+}
+
 .title{
   z-index: 4;
-  text-align: center;
+  text-align: left;
+  margin-left: 17%;
   margin-top: -500px;
 }
 
@@ -258,7 +322,6 @@ display: block;
   line-height: 80px;
   color: #000000;
   text-transform: uppercase;
-  
 }
 
 .title h1 {
@@ -288,18 +351,28 @@ display: block;
   .overlay a {
     font-size: 20px;
   }
+  .overlay2 a {
+    font-size: 20px;
+  }
   .overlay .close {
     font-size: 40px;
     top: 15px;
     right: 35px;
   }
-  
+  .overlay2 .Back{
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
 }
 
 @media only screen and (max-width: 800px) {
   .nav__links,
   .cta {
     display: none;
+  }
+  .title{
+    margin-left: 10%;
   }
   .menu {
     display: initial;
@@ -311,12 +384,16 @@ display: block;
     height: 50px;
   }
   .title span{
-    font-size: 40px;
-    line-height: 0px;
+    font-size: 45px;
+    line-height: 40px;
   }
   .title h1{
-    font-size: 50px;
-    line-height: 50px;
+    padding-top: 0px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .title .cta{
+    margin-top: -20px;
   }
 }
 
@@ -356,7 +433,7 @@ display: block;
   font-weight: 700;
   text-decoration: none;
   padding: 9px 25px;
-  background-color: green; 
+  background-color: rgb(14, 137, 67); 
   color: white;
   border: none;
   border-radius: 50px;
@@ -364,6 +441,9 @@ display: block;
   transition: background-color 0.3s ease 0s;
 }
 
+.meerinfo:hover {
+  background-color: rgb(14, 137, 67, 0.8);
+}
 .subtitle {
   display: flex;
   align-items: center;
@@ -399,18 +479,27 @@ display: block;
 @media (max-width: 800px) {
   .container {
     flex-direction: column;
-    
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .container > .inf{
       width: auto;
   }
+  .knop-inf a{
+    font-size: 15px;
+  }
 }
-
 /* EVENEMENTEN */
 
 .ev-titel{
     text-align: center;
     margin-top: 50px;
+}
+
+.ev-titel h1{
+  font-size: 40px;
+  font-weight: bold;
 }
 
 /* Slideshow container */
@@ -424,53 +513,6 @@ display: block;
 /* Hide the images by default */
 .mySlides {
   display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 25px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  color: rgba(37, 37, 37, 0.8);
-}
-
-/* The dots/bullets/indicators */
-
-.dots{
-  margin-top: -1px;
-  z-index: -1;
-}
-
-.dot {
-  cursor: pointer;
-  height: 5px;
-  width: 20px;
-  margin: 0 2px;
-  background-color: #bbb;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
 }
 
 /* Fading animation */
@@ -493,11 +535,15 @@ display: block;
 
 /* Preasidium */
 
-.Title{
-  font-size: 20px;
-  margin-top: 20px;
+.PresTitle{
+  margin-top: 50px;
+  margin-bottom: -40px;
   text-align: center;
-  border-bottom: 1px solid #0E8943;
+}
+
+.PresTitle h1{
+font-size: 40px;
+font-weight: bold;
 }
 
 .container-pres {
@@ -554,23 +600,30 @@ display: block;
 
 
 .container-pres .card .box .content {
-  padding: 10px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  height: 90%;
   text-align: center;
 }
 
 .container-pres .card .box .content .tekst-card{
-  height: 50%;
+  height: 100%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .container-pres .card .box .content img{
   width: 150px;
+  
 }
 
 .container-pres .card .box .content h2 {
   font-weight: bolder;
   text-transform: uppercase;
+  padding: 0;
   font-size: 25px;
   color: rgba(0, 0, 0, 1);
   pointer-events: none;
@@ -587,7 +640,8 @@ display: block;
 
 .container-pres .card .box .content h3 {
   font-size: 20px;
-  
+  padding: 0;
+  margin-bottom: 5px;
   color: rgb(56, 56, 56);
   z-index: 1;
   transition: 0.5s;
@@ -598,8 +652,9 @@ display: block;
 }
 
 .container-pres .card .box .content p {
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 300;
+  margin-bottom: 0px;
   color: #777;
   z-index: 1;
   transition: 0.5s;
@@ -617,7 +672,6 @@ display: block;
   display: inline-block;
   padding: 8px 20px;
   background: #0E8943;
-  margin-top: 20px;
   border-radius: 20px;
   color: #fff;
   text-decoration: none;
@@ -731,12 +785,22 @@ display: block;
   background-color: #0E8943;
 }
 
-/* ANCHOR ABOUT */
+/* ANCHORS */
 
+
+/* ABOUT */
 a.anchor {
   display: block;
   position: relative;
   top: -150px;
+  visibility: hidden;
+}
+
+/* PRAESIDIUM */
+a.anchor2 {
+  display: block;
+  position: relative;
+  top: -50px;
   visibility: hidden;
 }
 
@@ -780,57 +844,3 @@ footer .social .trooper-icon {
   width: auto;
   margin-right: 20px;
 }
-
-/*-----GESCHIEDENIS-----*/
-
-.container{
-  padding-top: 2rem;
-  z-index: -1;
-}
-
-.timeline {
-  position: relative;
-  max-width: 1000px;
-  margin: 0 auto;
-  margin-bottom: 2rem;
-}
-
-.timeline::after {
-  content: '';
-  position: absolute;
-  width: 6px;
-  background-color: black;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px;
-}
-
-.container-timeline {
-  padding: 10px 40px;
-  position: relative;
-  background-color: inherit;
-  width: 50%;
-}
-
-.container-timeline::after {
-  content: '';
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -13px;
-  background-color: #0E8943;
-  border: 4px solid #0E8943;
-  top: 15px;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-
-
-
-
-
-
-
-
