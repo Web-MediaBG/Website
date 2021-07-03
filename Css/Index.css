@@ -89,7 +89,6 @@ h6 {
   background-color: white;
   height: 100px ;
   box-shadow: 0px 0px 10px rgba(0,0,0,2);
-
 }
 
 .logo {
@@ -105,7 +104,7 @@ h6 {
 .cta,
 .overlay__content a {
   font-family: "Montserrat", sans-serif;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 700;
   color: #3d3d3d;
   text-decoration: none;
@@ -118,15 +117,12 @@ h6 {
 
 .nav__links a {
   padding: 0px 20px;
-}
-
-.nav__links a {
   transition: color 0.3s ease 0s;
 }
 
 .nav__links a:hover {
   color: #0E8943;
-  font-size: 24px;
+  font-size: 28px;
 }
 
 .cta {
@@ -183,6 +179,8 @@ display: block;
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
     background-color: #ddd;
+    color: black;
+    font-size: 24px;
 }
 
 /* Show the dropdown menu on hover */
@@ -192,7 +190,7 @@ display: block;
 
 .dropdown:hover .dropbtn{
     color: #0E8943;
-    font-size: 24px;
+    font-size: 28px;
     transition: color 0.3s ease 0s;
     cursor: pointer;
 }
@@ -622,6 +620,7 @@ font-weight: bold;
 
 .container-pres .card .box .content h2 {
   font-weight: bolder;
+  height: 70px;
   text-transform: uppercase;
   padding: 0;
   font-size: 25px;

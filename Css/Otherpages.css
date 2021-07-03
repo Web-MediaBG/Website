@@ -75,7 +75,6 @@ h6 {
   background-color: white;
   height: 100px ;
   box-shadow: 0px 0px 10px rgba(0,0,0,2);
-
 }
 
 .logo {
@@ -91,7 +90,7 @@ h6 {
 .cta,
 .overlay__content a {
   font-family: "Montserrat", sans-serif;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 700;
   color: #3d3d3d;
   text-decoration: none;
@@ -104,15 +103,12 @@ h6 {
 
 .nav__links a {
   padding: 0px 20px;
-}
-
-.nav__links a {
   transition: color 0.3s ease 0s;
 }
 
 .nav__links a:hover {
   color: #0E8943;
-  font-size: 24px;
+  font-size: 28px;
 }
 
 .cta {
@@ -169,6 +165,8 @@ display: block;
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
     background-color: #ddd;
+    color: black;
+    font-size: 24px;
 }
 
 /* Show the dropdown menu on hover */
@@ -178,7 +176,7 @@ display: block;
 
 .dropdown:hover .dropbtn{
     color: #0E8943;
-    font-size: 24px;
+    font-size: 28px;
     transition: color 0.3s ease 0s;
     cursor: pointer;
 }
@@ -469,7 +467,6 @@ display: block;
   margin: 43.5px;
 }
 
-
 .cl-title {
   margin-bottom: 2%;
   text-align: center;
@@ -481,6 +478,11 @@ display: block;
 
 .lied-title {
   text-align: center;
+  font-style: italic;
+}
+
+.lied-title h2{
+  color: #666666;
 }
 
 .lied {
@@ -719,6 +721,54 @@ display: block;
 
 .voordeel p{
   font-size: 18px;
+}
+
+/*-----OUD-PRAESIDIUM-----*/
+
+.container-oudpres{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.oudpres{
+  width: 600px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.oudpres h1{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.oudpres table{
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.oudpres table td{
+  border-bottom: 0.25px solid rgba(128, 128, 128, 0.4);
+  padding-top: 5px;
+  font-size: 20px;
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.oudpres table td:first-child{
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.oudpres table td:first-child::after{
+  content: ":";
 }
 
 
