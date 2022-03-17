@@ -1,830 +1,443 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Bovis-Grafica | Home</title>
-    <link rel="" href="Assets/Logo_Bovis-Grafica.png"><!--ICON WEBSITE-->
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../Css/Index.css">
-    <script src="../kit.fontawesome.com/3d5da7b796.js" crossorigin="anonymous" type="text/javascript"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bovis-Grafica</title>
+
+
+    <!--  Bootstrap css file  -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <!--  font awesome icons  -->
+    <link rel="stylesheet" href="./css/all.min.css">
+
+
+    <!--  Magnific Popup css file  -->
+    <link rel="stylesheet" href="./vendor/Magnific-Popup/dist/magnific-popup.css">
+
+
+    <!--  Owl-carousel css file  -->
+    <link rel="stylesheet" href="./vendor/owl-carousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./vendor/owl-carousel/css/owl.theme.default.min.css">
+
+
+    <!--  custom css file  -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!--  Responsive css file  -->
+    <link rel="stylesheet" href="css/responsive.css">
+
 </head>
+
 <body>
-    <header>
-        <div class="banner">
-            <div class="header">
-                <div class="nav">
-                    <a class="logo" href="/"><img class="logo_bovis" src="../Assets/Schild_Bovis-Grafica.png" alt="logo"></a>
-                    <nav>
-                        <ul class="nav__links">
-                            <a href="#" class="nav_active">Home</a>
-                            <div class="dropdown">
-                                <a class="dropbtn" href="#Praesidium">Over ons</a><i class="fa fa-caret-down"></i>
-                                <div class="dropdown-content">
-                                    <a href="#Praesidium">Praesidium 2021-2022</a>
-                                    <a href="./Over ons/Oud Praesidium/">Oud Praesidium</a>
-                                    <a href="./Over ons/Geschiedenis">Geschiedenis</a>
-                                    <a href="./Over ons/Clublied">Clublied</a> 
-                                </div>
-                            </div>
-                            <div class="dropdown">
-                                <a class="dropbtn" href="./Partners/Sponsors/">Partners</a><i class="fa fa-caret-down"></i>
-                                <div class="dropdown-content">
-                                    <a href="./Partners/Sponsors/">Sponsors</a>
-                                    <a href="./Partners/Voordelen/">Voordelen</a>
-                                    <a href="./Partners/Trooper/">Trooper</a>
-                                </div>
-                            </div>
-                            <a href="../Kalender">Kalender</a>
-                        </ul>
-                    </nav>
-                    <a class="cta" href="#">Inschrijven</a>
-                    <p class="menu cta">Menu</p>
+
+
+    <!--  ======================= Start Header Area ============================== -->
+
+    <header class="header_area">
+        <div class="main-menu">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#" ><img src="./img/bovis_schild_kleur.png" alt="logo" style="height: 50px;"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="mr-auto"></div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./Index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Aboutus.html">about us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Praesidium.html">Praesidium</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Partners.html">Partners</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Evenementen.html">Evenementen</a>
+                        </li>
+                        <li>
+                            <a class="" href="#">
+                                    <button type="button" class="btn button primary-button text-uppercase">Inschrijven</button>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <!-- MOBILE MENU -->
-                <div class="overlay">
-                    <a class="close">&times;</a>
-                    <div class="overlay__content">
-                        <a href="" class="nav_active">Home</a>
-                        <a class="Overons">Over ons   <i class="fas fa-caret-right"></i></a>
-                        <a class="Partners">Partners   <i class="fas fa-caret-right"></i></a>
-                        <a href="/Kalender/">Kalender</a>
-                    </div>
-                </div>
-                <!-- MOBILE SUBMENU 1 -->
-                <div class="overlay1">
-                    <a class="Back1">&lt;</a>
-                    <div class="overlay__content">
-                        <a href="#Praesidium" class="Praesidium">Praesidium 2021-2022</a>
-                        <a href="/Over ons/Oud Praesidium/">Oud Praesidium</a>
-                        <a href="/Over ons/Geschiedenis/">Geschiedenis</a>
-                        <a href="/Over ons/Clublied/">Clublied</a>
-                    </div>
-                </div>
-                <!-- MOBILE SUBMENU 2 -->
-                <div class="overlay2">
-                    <a class="Back2">&lt;</a>
-                    <div class="overlay__content">
-                        <a href="/Partners/Sponsors/">Sponsors</a>
-                        <a href="/Partners/Voordelen/">Voordelen</a>
-                        <a href="/Partners/Trooper/">Trooper</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="title">
-            <span>De gezelligste</span>
-            <h1>Club van 't stad</h1>
-            <a href="#about" class="cta">Leer ons kennen</a>
+            </nav>
         </div>
     </header>
-    <main>
-        <!-- Door fixed menubar plaatsen we een anchor om er voor te zorgen 
-            dat de inhoud niet achter de bar verschijnt als je op de knop drukt -->
-        <a class="anchor" id="about"></a>
-        <!-- Korte about us -->
-        <div class="container">
-            <div class="inf">
-                <div class="inhoud-inf">
-                    <div class="subtitle">
-                        <i class="fas fa-question"></i>
-                        <h2>Wie <span>zijn</span> wij</h2>
-                    </div>
-                    <p class="tekst-marg" >Bovis-Grafica is een Antwerpse studentenvereniging met Turnhoutse roots. <br> We zijn een
-                        gezellige club met als stamcafé den Barbier. Wij zijn de club van de richting Grafische en
-                        Digitale Media, Toegepaste Informatica en Vastgoed. <br> Vroeger de campus Paardenmarkt,
-                        maar nu op de gloednieuwe campus Park Spoor Noord van AP.</p>
-                </div>
-                <div class="knop-inf">
-                    <a href="" class="meerinfo">Klik voor meer info</a>
-                </div>
-                
-            </div> 
-            <div class="inf">
-                <div class="inhoud-inf">
-                    <div class="subtitle">
-                        <i class="fas fa-skiing"></i>
-                        <h2>Wat <span>doen</span> we</h2>
-                    </div>
-                    <div class="tekst tekst-marg">
-                        <ul>
-                            <li>Verkoop, doop & ontgroening</li>
-                            <li>Cantussen</li>
-                            <li>Kroegentochten</li>
-                            <li>TD's</li>
-                            <li>Bierbowlen, lasershoot, trampolinepark...</li>
-                            <li>ASL voetbalcompetitie</li>
-                            <li>101 Dagen TD</li>
-                            <li>Skireis</li>
-                            <li>Discord evenementen</li>
-                        </ul>
-                    </div> 
-                </div>
-                
-            </div>
-        </div>
 
-        <!-- Evenementen -->
-        <div class="ev-titel">
-            <h1>Onze evenementen</h1>
-        </div>
-        <!-- Slideshow container -->
-        <div class="slideshow-container">
-            <!-- Afbeeldingen op voledige grootte, copy paste voor meer foto's -->
-            <div class="mySlides fade">
-            <img src="Assets/EvenementenBanners/banner-1.png" style="width:100%">
-            </div>
-        
-            <div class="mySlides fade">
-            <img src="Assets/EvenementenBanners/banner-2.png" style="width:100%">
-            </div>
-        
-            <div class="mySlides fade">
-            <img src="Assets/EvenementenBanners/banner-3.png" style="width:100%">
-            </div>
-        </div>
-        <!-- ANCHOR PREASIDIUM-->
-        <a class="anchor2" id="Praesidium"></a>
-        <!-- PREASIDIUM -->
-        <div class="PresTitle">
-            <h1>Praesidium</h1>
-        </div>
-        <div class="container-pres">
-            <div class="card">
-                <div class="box">
-                    <div class="content">
-                        <div class="img-card">
-                            <img src="/Assets/PraesidiumFoto's/foto1-small.png" alt="" >
-                        </div>
-                        <div class="tekst-card">
-                            <h2>PRAESES</h2>
-                            <div class="info">
-                                <h3>Willem claeys</h3>
-                                <p>praeses@bovis-grafica.be</p>
+    <!--  ======================= End Header Area ============================== -->
+
+    <!--  ======================= Start Main Area ================================ -->
+    <main class="site-main">
+
+
+        <!--  ======================= Start Banner Area =======================  -->
+        <section class="site-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-md-12 site-title" >
+                        <h3 class="title-text">Hey</h3>
+                        <h1 class="title-text text-uppercase" >Wij zijn Bovis</h1>
+                        <h4 class="title-text text-uppercase">De gezelligste studentenclub van Antwerpen</h4>
+                        <div class="site-buttons">
+                            <div class="d-flex flex-row flex-wrap">
+                                <button type="button" class="btn button primary-button mr-4 text-uppercase">Leer ons kennen!</button>
                             </div>
                         </div>
-                        <div class="knop-card">
-                            <button onclick="Modal('TextWillem')">Meer info</button>
-                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-12 banner-image">
+                        <img src="./img/bovis_schild_kleur.png" alt="banner-img" class="img-fluid">
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="box">
-                    <div class="content">
-                        <div class="img-card">
-                            <img src="/Assets/PraesidiumFoto's/foto1-small.png" alt="" >
+        </section>
+        <!--  ======================= End Banner Area =======================  -->
+
+        <!--  ========================= About Area ==========================  -->
+
+        <section class="about-area">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="about-image">
+                            <img src="./img/about-us.png" alt="About us" class="img-fluid">
                         </div>
-                        <div class="tekst-card">
-                            <h2>Vice-PRAESES</h2>
-                            <div class="info">
-                                <h3>Annick Billiau</h3>
-                                <p>vice-praeses@bovis-grafica.be</p>
+                    </div>
+                    <div class="col-lg-6 col-md-12 about-title">
+                        <h2 class="text-uppercase pt-5">
+                            <span>Wat is</span>
+                            <span>Bovis-Grafica</span>
+                        </h2>
+                        <div class="paragraph py-4 w-75">
+                            <p class="para">
+                                Bovis-Grafica is een Antwerpse studentenvereniging met Turnhoutse roots.
+                                 We zijn een gezellige club met als stamcafé den Barbier. 
+                                 Wij zijn de club van de richting Grafische en Digitale Media,
+                                  Toegepaste informatica en Vastgoed
+                            </p>
+                        </div>
+                        <a href="./Praesidium.html">
+                            <button type="button" class="btn button primary-button text-uppercase">
+                                Ons Praesidium
+                            </button>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--  ========================= End About Area ==========================  -->
+        <!--  ======================= Project Area =============================  -->
+
+        <section class="project-area">
+            <div class="container">
+                <div class="project-title pb-5">
+                    <h1 class="text-uppercase title-h1">Recently Done Project</h1>
+                    <h1 class="text-uppercase title-h1">Quality Work</h1>
+                </div>
+
+                <div class="button-group">
+                    <button type="button" class="active" id="btn1" data-filter="*">All</button>
+                    <button type="button" data-filter=".popular">Popular</button>
+                    <button type="button" data-filter=".latest">Latest</button>
+                    <button type="button" data-filter=".following">Following</button>
+                    <button type="button" data-filter=".upcoming">Upcoming</button>
+                </div>
+
+                <div class="row grid">
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item latest">
+                        <div class="our-project">
+                            <div class="img">
+                                <a class="test-popup-link" href="./img/portfolio/p1.jpg">
+                                    <img src="./img/portfolio/p1.jpg" alt="portfolio-1" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="title py-4">
+                                <h4 class="text-uppercase">Minimul Desing</h4>
+                                <span class="text-secondary">Latest, Portfolio</span>
                             </div>
                         </div>
-                        <div class="knop-card">
-                            <button onclick="Modal('TextAnnick')">Meer info</button>
-                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="box">
-                    <div class="content">
-                        <div class="img-card">
-                            <img src="/Assets/PraesidiumFoto's/foto1-small.png" alt="" >
-                        </div>
-                        <div class="tekst-card">
-                            <h2>Vice-PRAESES</h2>
-                            <div class="info">
-                                <h3>Kevin Van Driel</h3>
-                                <p>vice-praeses@bovis-grafica.be</p>
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item popular">
+                        <div class="our-project">
+                            <div class="img">
+                                <a class="test-popup-link" href="./img/portfolio/p2.jpg">
+                                    <img src="./img/portfolio/p2.jpg" alt="portfolio-2" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="title py-4">
+                                <h4 class="text-uppercase">Paint Wall</h4>
+                                <span class="text-secondary">Popular, Portfolio</span>
                             </div>
                         </div>
-                        <div class="knop-card">
-                            <button onclick="Modal('TextKevin')">Meer info</button>
-                        </div>
                     </div>
-                    
-                </div>
-            </div>
-            <div class="card">
-                <div class="box">
-                    <div class="content">
-                        <div class="img-card">
-                            <img src="/Assets/PraesidiumFoto's/foto1-small.png" alt="" >
-                        </div>
-                        <div class="tekst-card">
-                            <h2>Ab-Actis</h2>
-                            <div class="info">
-                                <h3>Frauke Codenie</h3>
-                                <p>ab-actis@bovis-grafica.be</p>
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item popular">
+                        <div class="our-project">
+                            <div class="img">
+                                <a class="test-popup-link" href="./img/portfolio/p3.jpg">
+                                    <img src="./img/portfolio/p3.jpg" alt="portfolio-3" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="title py-4">
+                                <h4 class="text-uppercase">Female light</h4>
+                                <span class="text-secondary">Popular, Portfolio</span>
                             </div>
                         </div>
-                        <div class="knop-card">
-                            <button onclick="Modal('TextFrauke')">Meer info</button>
-                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="box">
-                    <div class="content">
-                        <div class="img-card">
-                            <img src="/Assets/PraesidiumFoto's/foto1-small.png" alt="" >
-                        </div>
-                        <div class="tekst-card">
-                            <h2>Quaestor</h2>
-                            <div class="info">
-                                <h3>Simon Put</h3>
-                                <p>quaestor@bovis-grafica.be</p>
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item upcoming">
+                        <div class="our-project">
+                            <div class="img">
+                                <a class="test-popup-link" href="./img/portfolio/p4.jpg">
+                                    <img src="./img/portfolio/p4.jpg" alt="portfolio-4" class="img-fluid">
+                                </a>
                             </div>
-                            
-                        </div>
-                        <div class="knop-card">
-                            <button onclick="Modal('TextSimon')">Meer info</button>
-                        </div> 
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="box">
-                    <div class="content">
-                        <div class="img-card">
-                            <img src="/Assets/PraesidiumFoto's/foto1-small.png" alt="" >
-                        </div>
-                        <div class="tekst-card">
-                            <h2>Schachten-meester</h2>
-                            <div class="info">
-                                <h3>Dries Wynants</h3>
-                                <p>schachtenmeester@bovis-grafica.be</p>
+                            <div class="title py-4">
+                                <h4 class="text-uppercase">Fourth Air</h4>
+                                <span class="text-secondary">Upcoming, Portfolio</span>
                             </div>
                         </div>
-                        <div class="knop-card">
-                            <button onclick="Modal('TextDries')">Meer info</button>
-                        </div>  
                     </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="box">
-                    <div class="content">
-                        <div class="img-card">
-                            <img src="/Assets/PraesidiumFoto's/foto1-small.png" alt="" >
-                        </div>
-                        <div class="tekst-card">
-                            <h2>Schachten-temmer</h2>
-                            <div class="info">
-                                <h3>Mathias Mies</h3>
-                                <p>schachtenmeester@bovis-grafica.be</p>
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item upcoming">
+                        <div class="our-project">
+                            <div class="img">
+                                <a class="test-popup-link" href="./img/portfolio/p5.jpg">
+                                    <img src="./img/portfolio/p5.jpg" alt="portfolio-5" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="title py-4">
+                                <h4 class="text-uppercase">Muliple fown</h4>
+                                <span class="text-secondary">Upcoming, Portfolio</span>
                             </div>
                         </div>
-                        <div class="knop-card">
-                            <button onclick="Modal('TextMathias')">Meer info</button>
-                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="box">
-                    <div class="content">
-                        <div class="img-card">
-                            <img src="/Assets/PraesidiumFoto's/foto1-small.png" alt="" >
-                        </div>
-                        <div class="tekst-card">
-                            <h2>Schachten-temmer</h2>
-                            <div class="info">
-                                <h3>Bernd Van Loon</h3>
-                                <p>schachtenmeester@bovis-grafica.be</p>
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item following">
+                        <div class="our-project">
+                            <div class="img">
+                                <a class="test-popup-link" href="./img/portfolio/p6.jpg">
+                                    <img src="./img/portfolio/p6.jpg" alt="portfolio-6" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="title py-4">
+                                <h4 class="text-uppercase">Together sign</h4>
+                                <span class="text-secondary">Following, Portfolio</span>
                             </div>
                         </div>
-                        <div class="knop-card">
-                            <button onclick="Modal('TextBernd')">Meer info</button>
-                        </div> 
                     </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="box">
-                    <div class="content">
-                        <div class="img-card">
-                            <img src="/Assets/PraesidiumFoto's/foto1-small.png" alt="">
-                        </div>
-                        <div class="tekst-card">
-                            <h2>Pr & Zedenmeesteres</h2>
-                            <div class="info">
-                                <h3>Laura Goris</h3>
-                                <p>zedenmeester@bovis-grafica.be</p>
-                                <p>pr@bovis-grafica.be</p>
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item following">
+                        <div class="our-project">
+                            <div class="img">
+                                <a class="test-popup-link" href="./img/portfolio/p7.jpg">
+                                    <img src="./img/portfolio/p7.jpg" alt="portfolio-7" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="title py-4">
+                                <h4 class="text-uppercase">Green Heaven</h4>
+                                <span class="text-secondary">Following, Portfolio</span>
                             </div>
                         </div>
-                        <div class="knop-card">
-                            <button onclick="Modal('TextLaura')">Meer info</button>
-                        </div>
                     </div>
-                    
-                </div>
-            </div>
-            <div class="card">
-                <div class="box">
-                    <div class="content">
-                        <div class="img-card">
-                            <img src="/Assets/PraesidiumFoto's/foto1-small.png" alt="">
-                        </div>
-                        <div class="tekst-card">
-                            <h2>Pr</h2>
-                            <div class="info">
-                                <h3>Hannelie Somers</h3>
-                                <p>pr@bovis-grafica.be</p>  
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item following">
+                        <div class="our-project">
+                            <div class="img">
+                                <a class="test-popup-link" href="./img/portfolio/p8.jpg">
+                                    <img src="./img/portfolio/p8.jpg" alt="portfolio-8" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="title py-4">
+                                <h4 class="text-uppercase">Fly Male</h4>
+                                <span class="text-secondary">Following, Portfolio</span>
                             </div>
                         </div>
-                        <div class="knop-card">
-                            <button onclick="Modal('TextHannelie')">Meer info</button>
-                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="box">
-                    <div class="content">
-                        <div class="img-card">
-                            <img src="/Assets/PraesidiumFoto's/foto1-small.png" alt="">
-                        </div>
-                        <div class="tekst-card">
-                            <h2>Feest</h2>
-                            <div class="info">
-                                <h3>Flore Koloszewski</h3>
-                                <p>feest@bovis-grafica.be</p>
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item upcoming">
+                        <div class="our-project">
+                            <div class="img">
+                                <a class="test-popup-link" href="./img/portfolio/p9.jpg">
+                                    <img src="./img/portfolio/p9.jpg" alt="portfolio-9" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="title py-4">
+                                <h4 class="text-uppercase">Camera Lens</h4>
+                                <span class="text-secondary">Upcoming, Portfolio</span>
                             </div>
                         </div>
-                        <div class="knop-card">
-                            <button onclick="Modal('TextFlore')">Meer info</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--  ======================= End Project Area =============================  -->
+
+        <!--  ======================== About Me Area ==============================  -->
+
+        <section class="about-area">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-12">
+                        <div class="about-title">
+                            <h1 class="text-uppercase title-h1">Client Say about me</h1>
+                            <p class="para">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, deleniti
+                                recusandae. Esse incidunt rem repellendus ab voluptates maxime? Nemo, numquam!
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="box">
-                    <div class="content">
-                        <div class="img-card">
-                            <img src="/Assets/PraesidiumFoto's/foto1-small.png" alt="">
+
+            <div class="container carousel py-lg-5">
+                <div class="owl-carousel owl-theme">
+                    <div class="client row">
+                        <div class="col-lg-4 col-md-12 client-img">
+                            <img src="./img/testimonials/t1.jpg" alt="img1" class="img-fluid">
                         </div>
-                        <div class="tekst-card">
-                            <h2>Feest</h2>
-                            <div class="info">
-                                <h3>Eva Diels</h3>
-                                <p>feest@bovis-grafica.be</p> 
+                        <div class="col-lg-8 col-md-12 about-client">
+                            <h4 class="text-uppercase">John Martin</h4>
+                            <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem architecto
+                                consequuntur ratione, obcaecati corrupti deserunt.</p>
+                        </div>
+                    </div>
+                    <div class="client row">
+                        <div class="col-lg-4 col-md-12 client-img">
+                            <img src="./img/testimonials/t2.jpg" alt="img2" class="img-fluid">
+                        </div>
+                        <div class="col-lg-8 col-md-12 about-client">
+                            <h4 class="text-uppercase">Mac Hill</h4>
+                            <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem architecto
+                                consequuntur ratione, obcaecati corrupti deserunt.</p>
+                        </div>
+                    </div>
+                    <div class="client row">
+                        <div class="col-lg-4 col-md-12 client-img">
+                            <img src="./img/testimonials/t1.jpg" alt="img1" class="img-fluid">
+                        </div>
+                        <div class="col-lg-8 col-md-12 about-client">
+                            <h4 class="text-uppercase">John Martin</h4>
+                            <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem architecto
+                                consequuntur ratione, obcaecati corrupti deserunt.</p>
+                        </div>
+                    </div>
+                    <div class="client row">
+                        <div class="col-lg-4 col-md-12 client-img">
+                            <img src="./img/testimonials/t2.jpg" alt="img2" class="img-fluid">
+                        </div>
+                        <div class="col-lg-8 col-md-12 about-client">
+                            <h4 class="text-uppercase">Mac Hill</h4>
+                            <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem architecto
+                                consequuntur ratione, obcaecati corrupti deserunt.</p>
+                        </div>
+                    </div>
+                    <div class="client row">
+                        <div class="col-lg-4 col-md-12 client-img">
+                            <img src="./img/testimonials/t1.jpg" alt="img1" class="img-fluid">
+                        </div>
+                        <div class="col-lg-8 col-md-12 about-client">
+                            <h4 class="text-uppercase">John Martin</h4>
+                            <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem architecto
+                                consequuntur ratione, obcaecati corrupti deserunt.</p>
+                        </div>
+                    </div>
+                    <div class="client row">
+                        <div class="col-lg-4 col-md-12 client-img">
+                            <img src="./img/testimonials/t2.jpg" alt="img2" class="img-fluid">
+                        </div>
+                        <div class="col-lg-8 col-md-12 about-client">
+                            <h4 class="text-uppercase">Mac Hill</h4>
+                            <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem architecto
+                                consequuntur ratione, obcaecati corrupti deserunt.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!--  ======================== End About Me Area ==============================  -->
+
+        <!--  ========================== Subscribe me Area ============================  -->
+        <section class="subscribe-us-area">
+            <div class="container subscribe">
+                <div class="row">
+                    <div class="col-lg-12 text-center subscribe-title">
+                        <h4 class="text-uppercase">Get Update From anywhere</h4>
+                        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
+                            consequuntur.</p>
+                    </div>
+                </div>
+                <div class="d-sm-flex justify-content-center">
+                    <form class="w-50">
+                        <div class="row d-flex flex-row flex-wrap">
+                            <div class="col input-textbox">
+                                <input type="text" id="txtemail" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="col">
+                                <div class="btn-submit">
+                                    <button type="submit" class="btn btn-success float-right">Subscribe</button>
+                                </div>
                             </div>
                         </div>
-                        <div class="knop-card">
-                            <button onclick="Modal('TextEva')">Meer info</button>
-                        </div>
-                    </div>
+                    </form>
                 </div>
             </div>
-            <div class="card">
-                <div class="box">
-                    <div class="content">
-                        <div class="img-card">
-                            <img src="/Assets/PraesidiumFoto's/foto1-small.png" alt="">
-                        </div>
-                        <div class="tekst-card">
-                            <h2>Web-Media</h2>
-                            <div class="info">
-                                <h3>Yorgi De Schrijver</h3>
-                                <p>web-media@bovis-grafica.be</p>
-                            </div>
-                        </div>
-                        <div class="knop-card">
-                            <button onclick="Modal('TextYorgi')">Meer info</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="box">
-                    <div class="content">
-                        <div class="img-card">
-                            <img src="/Assets/PraesidiumFoto's/foto1-small.png" alt="">
-                        </div>
-                        <div class="tekst-card">
-                            <h2>Soc</h2>
-                            <div class="info">
-                                <h3>Lise Pepermans</h3>
-                                <p>soc@bovis-grafica.be</p>
-                            </div>
-                        </div>
-                        <div class="knop-card">
-                            <button onclick="Modal('TextLise')">Meer info</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="box">
-                    <div class="content">
-                        <div class="img-card">
-                            <img src="/Assets/PraesidiumFoto's/foto1-small.png" alt="">
-                        </div>
-                        <div class="tekst-card">
-                            <h2>Cantor</h2>
-                            <div class="info">
-                                <h3>João Pedro Dal Bosco</h3>
-                            </div>
-                        </div>
-                        <div class="knop-card">
-                            <button onclick="Modal('TextSkippy')">Meer info</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="box">
-                    <div class="content">
-                        <div class="img-card">
-                            <img src="/Assets/PraesidiumFoto's/foto1-small.png" alt="">
-                        </div>
-                        <div class="tekst-card">
-                            <h2>Meter</h2>
-                            <div class="info">
-                               <h3>Fleur Stynen</h3> 
-                            </div>
-                        </div>
-                        <div class="knop-card">
-                            <button onclick="Modal('TextFleur')">Meer info</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="box">
-                    <div class="content">
-                        <div class="img-card">
-                            <img src="/Assets/PraesidiumFoto's/foto1-small.png" alt="">
-                        </div>
-                        <div class="tekst-card">
-                            <h2>Ere-cantor</h2>
-                            <div class="info">
-                                <h3>Sebastiaan Verhoeven</h3>
-                            </div>
-                        </div>
-                        <div class="knop-card">
-                            <button onclick="Modal('TextSeba')">Meer info</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- The Modals -->
-        <div id="TextWillem" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2>Willem claeys - Praeses</h2>
-                </div>
-                <div class="modal-body">
-                    <table>
-                        <tr>
-                            <td class="vraag">Naam:</td>
-                            <td class="antwoord">Willem</td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="modal-footer">
-                    <a class="closeM" onclick="Close()">Sluiten</a>
-                </div>
-            </div>
-        </div>
-        <div id="TextAnnick" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2>Annick Billiau - Vice-Praeses</h2>
-                </div>
-                <div class="modal-body">
-                    <table>
-                        <tr>
-                            <td class="vraag">Naam:</td>
-                            <td class="antwoord">Willem</td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="modal-footer">
-                    <a class="closeM" onclick="Close()">Sluiten</a>
-                </div>
-            </div>
-        </div>
-        <div id="TextKevin" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2>Kevin Van Driel - Vice-Praeses</h2>
-                </div>
-                <div class="modal-body">
-                    <table>
-                        <tr>
-                            <td class="vraag">Naam:</td>
-                            <td class="antwoord">Willem</td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="modal-footer">
-                    <a class="closeM" onclick="Close()">Sluiten</a>
-                </div>
-            </div>
-        </div>
-        <div id="TextFrauke" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2>Frauke Codenie - Ab-Actis</h2>
-                </div>
-                <div class="modal-body">
-                    <table>
-                        <tr>
-                            <td class="vraag">Naam:</td>
-                            <td class="antwoord">Willem</td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="modal-footer">
-                    <a class="closeM" onclick="Close()">Sluiten</a>
-                </div>
-            </div>
-        </div>
-        <div id="TextSimon" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2>Simon Put - Quaestor</h2>
-                </div>
-                <div class="modal-body">
-                    <table>
-                        <tr>
-                            <td class="vraag">Naam:</td>
-                            <td class="antwoord">Willem</td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="modal-footer">
-                    <a class="closeM" onclick="Close()">Sluiten</a>
-                </div>
-            </div>
-        </div>
-        <div id="TextDries" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2>Dries Wynants - Schachtenmeester</h2>
-                </div>
-                <div class="modal-body">
-                    <table>
-                        <tr>
-                            <td class="vraag">Naam:</td>
-                            <td class="antwoord">Willem</td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="modal-footer">
-                    <a class="closeM" onclick="Close()">Sluiten</a>
-                </div>
-            </div>
-        </div>
-        <div id="TextMathias" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2>Mathias Mies - Schachtentemmer</h2>
-                </div>
-                <div class="modal-body">
-                    <table>
-                        <tr>
-                            <td class="vraag">Naam:</td>
-                            <td class="antwoord">Willem</td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="modal-footer">
-                    <a class="closeM" onclick="Close()">Sluiten</a>
-                </div>
-            </div>
-        </div>
-        <div id="TextBernd" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2>Bernd Van Loon - Schachtentemmer</h2>
-                </div>
-                <div class="modal-body">
-                    <table>
-                        <tr>
-                            <td class="vraag">Naam:</td>
-                            <td class="antwoord">Willem</td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="modal-footer">
-                    <a class="closeM" onclick="Close()">Sluiten</a>
-                </div>
-            </div>
-        </div>
-        <div id="TextLaura" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2>Laura Goris - Pr & Zedenmeesteres</h2>
-                </div>
-                <div class="modal-body">
-                    <table>
-                        <tr>
-                            <td class="vraag">Naam:</td>
-                            <td class="antwoord">Willem</td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="modal-footer">
-                    <a class="closeM" onclick="Close()">Sluiten</a>
-                </div>
-            </div>
-        </div>
-        <div id="TextHannelie" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2>Hannelie Somers - PR</h2>
-                </div>
-                <div class="modal-body">
-                    <table>
-                        <tr>
-                            <td class="vraag">Naam:</td>
-                            <td class="antwoord">Willem</td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="modal-footer">
-                    <a class="closeM" onclick="Close()">Sluiten</a>
-                </div>
-            </div>
-        </div>
-        <div id="TextFlore" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2>Flore Koloszewski - Feest</h2>
-                </div>
-                <div class="modal-body">
-                    <table>
-                        <tr>
-                            <td class="vraag">Naam:</td>
-                            <td class="antwoord">Willem</td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="modal-footer">
-                    <a class="closeM" onclick="Close()">Sluiten</a>
-                </div>
-            </div>
-        </div>
-        <div id="TextEva" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2>Eva Diels - Feest</h2>
-                </div>
-                <div class="modal-body">
-                    <table>
-                        <tr>
-                            <td class="vraag">Naam:</td>
-                            <td class="antwoord">Willem</td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="modal-footer">
-                    <a class="closeM" onclick="Close()">Sluiten</a>
-                </div>
-            </div>
-        </div>
-        <div id="TextYorgi" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2>Yorgi De Schrijver - Web-Media</h2>
-                </div>
-                <div class="modal-body">
-                    <table>
-                        <tr>
-                            <td class="vraag">Naam:</td>
-                            <td class="antwoord">Willem</td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="modal-footer">
-                    <a class="closeM" onclick="Close()">Sluiten</a>
-                </div>
-            </div>
-        </div>
-        <div id="TextLise" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2>Lise Pepermans - SOC</h2>
-                </div>
-                <div class="modal-body">
-                    <table>
-                        <tr>
-                            <td class="vraag">Naam:</td>
-                            <td class="antwoord">Willem</td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="modal-footer">
-                    <a class="closeM" onclick="Close()">Sluiten</a>
-                </div>
-            </div>
-        </div>
-        <div id="TextSkippy" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2>João Pedro Dal Bosco - Cantor</h2>
-                </div>
-                <div class="modal-body">
-                    <table>
-                        <tr>
-                            <td class="vraag">Naam:</td>
-                            <td class="antwoord">Willem</td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="modal-footer">
-                    <a class="closeM" onclick="Close()">Sluiten</a>
-                </div>
-            </div>
-        </div>
-        <div id="TextFleur" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2>Fleur - Meter</h2>
-                </div>
-                <div class="modal-body">
-                    <table>
-                        <tr>
-                            <td class="vraag">Naam:</td>
-                            <td class="antwoord">Willem</td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="modal-footer">
-                    <a class="closeM" onclick="Close()">Sluiten</a>
-                </div>
-            </div>
-            <div id="TextSeba" class="modal">
-                <!-- Modal content -->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h2>Sebastiaan Verhoeven - Ere-Cantor</h2>
-                    </div>
-                    <div class="modal-body">
-                        <table>
-                            <tr>
-                                <td class="vraag">Naam:</td>
-                                <td class="antwoord">Willem</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="modal-footer">
-                        <a class="closeM" onclick="Close()">Sluiten</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-      
+        </section>
+        <!--  ========================== End Subscribe me Area ============================  -->
+
+
     </main>
-    <footer>
-        <svg viewBox="0 -20 700 110" width="100%" height="110" preserveAspectRatio="none">
-            <path transform="translate(0, -20)" d="M0,10 c80,-22 240,0 350,18 c90,17 260,7.5 350,-20 v50 h-700" fill="#0080bb" />
-            <path d="M0,10 c80,-18 230,-12 350,7 c80,13 260,17 350,-5 v100 h-700z" fill="#03a9f4" />
-          </svg>
-        <div class="foot-grid">
-            <div class="copy">
-                <p> &copy;Bovis-Grafica | Antwerpen, 2021</p>
-            </div>
+    <!--  ======================= End Main Area ================================ -->
 
-            <div class="social">
-                <a href="https://www.facebook.com/Bovisgraficaa/"><i class="fab fa-facebook-f" target="_blank"></i></a>
-                <a href="https://www.instagram.com/bovis.grafica/"><i class="fab fa-instagram" target="_blank"></i></a>
-                <a href="trooper.html"><img class="trooper-icon" src="images/trooper_wit.png" alt=""></a>
-                <a href="https://www.youtube.com/channel/UCmgaZgOfldwL-u7MlGYIgUg"><i class="fab fa-youtube" target="_blank"></i></a>
-                <a href="https://discord.gg/bBeqf7j" target="_blank"><i class="fab fa-discord"></i></a>
+    <footer class="footer-area">
+        <div class="container">
+            <div class="">
+                <div class="site-logo text-center py-4">
+                    <a href="#"><img src="./img/logo.png" alt="logo"></a>
+                </div>
+                <div class="social text-center">
+                    <h5 class="text-uppercase">Follow me</h5>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+                <div class="copyrights text-center">
+                    <p class="para">
+                        Copyright ©2022 All rights reserved | This website is made by Yorgi De Schijver
+                    </p>
+                </div>
             </div>
         </div>
     </footer>
+
+
+    <!--  Jquery js file  -->
+    <script src="./js/jquery.3.4.1.js"></script>
+
+    <!--  Bootstrap js file  -->
+    <script src="./js/bootstrap.min.js"></script>
+
+    <!--  isotope js library  -->
+    <script src="./vendor/isotope/isotope.min.js"></script>
+
+    <!--  Magnific popup script file  -->
+    <script src="./vendor/Magnific-Popup/dist/jquery.magnific-popup.min.js"></script>
+
+    <!--  Owl-carousel js file  -->
+    <script src="./vendor/owl-carousel/js/owl.carousel.min.js"></script>
+
+    <!--  custom js file  -->
+    <script src="./js/main.js"></script>
+
+
 </body>
-<script type="text/javascript" src="/Javascript/Slideshow.js"></script>
-<script type="text/javascript" src="/Javascript/Script.js"></script>
+
 </html>
