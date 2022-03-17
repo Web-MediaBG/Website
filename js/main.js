@@ -58,6 +58,24 @@ $(document).ready(function () {
         }
     }
 
+    $(window).resize(function(){
+        var width = $(window).width();
+        var x = document.getElementById("inschrijven")
+        var y = document.getElementById("Button")
+        if(width < 1000){
+           y.style.display = "none"
+           x.style.display = "block"
+
+        }
+        else{
+            y.style.display = "block";
+            x.style.display = "none"
+        }
+    })
+    .resize();//trigger the resize event on page load.
+
     navbarFixed();
+
+
 
 });
