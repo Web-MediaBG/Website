@@ -10,6 +10,7 @@
 @import url(./partials/_global.css);
 
 
+
 /* start navigation */ 
 
 .header_area .main-menu .navbar .navbar-brand{
@@ -325,21 +326,25 @@
 }
 
 .ps_image img {
-    border-radius: 50%
+    border-radius: 50%;
+    box-shadow: 5px 5px 30px #888888;
 }
+
 
 .ps_image:after {
     content: '';
     position: absolute;
     z-index: -1;
-    transform: translate(7%, 7%);
+    transform: translate(5%, 7%);
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     max-width: 200px;
     border: 2px solid var(--primary-color2);
-    border-radius: 50%
+    outline: 2px solid var(--primary-color); 
+    outline-offset: 3px;
+    border-radius: 50%;
 }
 
 .team-boxed {
@@ -440,12 +445,10 @@
 }
 
 .team-boxed .item .name {
-    font-family: 'Open Sans';
-    font-weight: 700;
+    font: normal bold 20px/ 48px var(--roboto);;
     margin-top: 28px;
     margin-bottom: 8px;
     color: inherit;
-    font-size: 20px
 }
 
 .team-boxed .item .title {
@@ -467,13 +470,14 @@
 }
 
 .team-boxed .social a {
-    color: inherit;
+    color: var(--box-shadow);
     margin: 0 10px;
     display: inline-block;
-    opacity: .7
+    opacity: 0.5
 }
 
 .team-boxed .social a:hover {
+    color: var(--primary-color2);
     opacity: 1
 }
 
@@ -489,7 +493,7 @@ td {
 .modaltitle {
     font-size: 30px;
     font-weight: 700;
-    font-family: Opensans, sans-serif
+    font-family: var(--roboto)
 }
 
 @media (max-width:576px) {

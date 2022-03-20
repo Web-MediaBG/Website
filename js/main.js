@@ -23,8 +23,11 @@ $(document).ready(function () {
     
           $(".project-area .btn:first-child").text($(this).text());
           $(".project-area .btn:first-child").val($(this).text());
+          $(".project-area .btn:first-child").append(' <i class="fas fa-chevron-down"></i>');
     
        });
+
+
     
     });
 
@@ -44,7 +47,7 @@ $(document).ready(function () {
         return false;
     })
 
-    $('.project-area .button-group #btn1').trigger('click');
+    $('.project-area .dropdown-menu #btn1').trigger('click');
 
     $('.project-area .grid .test-popup-link').magnificPopup({
         type: 'image',
