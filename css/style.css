@@ -47,6 +47,9 @@
 }
 
 
+
+
+
 .Header_title {
     font-size: 100px;
     margin-top:-70px;
@@ -544,6 +547,12 @@ td {
     font: normal 500 20px
 }
 
+.site-main .project-area .our-project .img:hover{
+    box-shadow: var(--box-shadow);
+    transform: scale(1.1);
+    transition: all 1s;
+
+}
 
 
 
@@ -656,5 +665,83 @@ footer.footer-area .social a:hover > i{
     color: var(--primary-color);
 }
 
+@keyframes heartFadeInOut 
+{
+    0%
+    {
+      transform: scale( .75 );
+    }
+    20%
+    {
+      transform: scale( 1 );
+    }
+    40%
+    {
+      transform: scale( .75 );
+    }
+    60%
+    {
+      transform: scale( 1 );
+    }
+    80%
+    {
+      transform: scale( .75 );
+    }
+    100%
+    {
+      transform: scale( .75 );
+    }
+  }
+  
+.beating-text { 
+    animation-name: heartFadeInOut; 
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-direction: alternate;
+  
+  }
+
 
 /* End Footer */ 
+
+/* BACK TO TOP BUTTON */
+
+#button {
+    display: inline-block;
+    background-image: var(--gradient-color);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+  #button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 3rem;
+    color: #fff;
+  }
+  #button:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+  #button:active {
+    background-color: #555;
+  }
+  #button.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+
+/* END BACK TO TOP BUTTON*/

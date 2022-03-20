@@ -29,8 +29,8 @@ $(document).ready(function () {
 
     $('.site-main .about-area .owl-carousel').owlCarousel({
         loop: false,
-        autoplay: false,
-        dots: false,
+        autoplay: true,
+        dots: true,
         responsive: {
             0: {
                 items: 1
@@ -75,6 +75,21 @@ $(document).ready(function () {
     .resize();//trigger the resize event on page load.
 
     navbarFixed();
+
+    var btn = $('#button');
+
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 300) {
+            btn.addClass('show');
+        } else {
+            btn.removeClass('show');
+        }
+    });
+
+    btn.on('click', function (e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: 0 }, '300');
+    });
 
 
 
