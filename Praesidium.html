@@ -11,6 +11,7 @@
     <!--  Bootstrap css file  -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
 
+
     <!--  font awesome icons  -->
     <link rel="stylesheet" href="./css/all.min.css">
 
@@ -445,26 +446,35 @@
         <!--  ======================= End Huidig Praesidium =============================  -->
 
         <!--  ======================= Project Area =============================  -->
-
         <section class="project-area">
             <div class="container">
                 <div class="project-title pb-5">
                     <h1 class="text-uppercase title-h1">Het Oud Praesidium</h1>
                 </div>
 
-                <div class="button-group">
-                    <button type="button" class="active" id="btn1" data-filter=".2021">2020-2021</button>
-                    <button type="button" data-filter=".2020">2019-2020</button>
-                    <button type="button" data-filter=".2019">2018-2019</button>
-                    <button type="button" data-filter=".2018">2017-2018</button>
-                    <button type="button" data-filter=".2017">2016-2017</button>
-                    <button type="button" data-filter=".2016">2015-2016</button>
-                    <button type="button" data-filter=".2015">2014-2015</button>
-                    <button type="button" data-filter=".2014">2013-2014</button>
-                    <button type="button" data-filter=".2014">2012-2013</button>
-                    <button type="button" data-filter=".2014">2011-2012</button>
-                    <button type="button" data-filter=".2014">2010-2011</button>
-                </div>
+                <div class="dropdown">
+                    <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      2020-2021
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" class="active" id="btn1" data-filter=".2021">2020-2021</a>
+                      <a class="dropdown-item" data-filter=".2020">2019-2020</a>
+                      <a class="dropdown-item" data-filter=".2019">2018-2019</a>
+                      <a class="dropdown-item" data-filter=".2018">2017-2018</a>
+                      <a class="dropdown-item" data-filter=".2017">2016-2017</a>
+                      <a class="dropdown-item" data-filter=".2016">2015-2016</a>
+                      <a class="dropdown-item" data-filter=".2015">2014-2015</a>
+                      <a class="dropdown-item" data-filter=".2014">2013-2014</a>
+                      <a class="dropdown-item" data-filter=".2013">2012-2013</a>
+                      <a class="dropdown-item" data-filter=".2012">2011-2012</a>
+                      <a class="dropdown-item" data-filter=".2011">2010-2011</a>
+
+                    </div>
+                    <br>
+                    <br>
+                  </div>
+
+                
 
                 <div class="grid">
                     <div class="2021" style="width: 100%;">
@@ -545,7 +555,7 @@
                                     </tr>
                                     <tr>
                                         <td>Cantor</td>
-                                        <td>João Pedro Dak Bosco</td>
+                                        <td>João Pedro Dal Bosco</td>
                                     </tr>
                                     <tr>
                                         <td>Meter</td>
@@ -1140,8 +1150,7 @@
         <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title modaltitle" style="font-weight: bold;">WILLEM CLAEYS - PRAESES</h4><button
-                        type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h4 class="modal-title modaltitle" style="font-weight: bold;">WILLEM CLAEYS - PRAESES</h4>
                 </div>
                 <div class="modal-body">
                     <div class="table-responsive">
@@ -1235,7 +1244,6 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title modaltitle" style="font-weight: bold;">ANNICK BILLIAU - VICE-PRAESES</h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="table-responsive">
@@ -1322,7 +1330,6 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title modaltitle" style="font-weight: bold;">KEVIN VAN DRIEL - VICE-PRAESES</h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="table-responsive">
@@ -1407,8 +1414,7 @@
         <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title modaltitle" style="font-weight: bold;">FRAUKE CODENIE - AB-ACTIS</h4><button
-                        type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h4 class="modal-title modaltitle" style="font-weight: bold;">FRAUKE CODENIE - AB-ACTIS</h4>
                 </div>
                 <div class="modal-body">
                     <div class="table-responsive">
@@ -1500,8 +1506,7 @@
         <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title modaltitle" style="font-weight: bold;">SIMON PUT - QUAESTOR</h4><button
-                        type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h4 class="modal-title modaltitle" style="font-weight: bold;">SIMON PUT - QUAESTOR</h4>
                 </div>
                 <div class="modal-body">
                     <div class="table-responsive">
@@ -1591,7 +1596,6 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title modaltitle" style="font-weight: bold;">DRIES WYNANTS - SCHACHTENMEESTER</h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="table-responsive">
@@ -1684,7 +1688,6 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title modaltitle" style="font-weight: bold;">BERND VAN LOON - SCHACHTENTEMMER</h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="table-responsive">
@@ -1777,7 +1780,6 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title modaltitle" style="font-weight: bold;">MATHIAS MIES - SCHACHTENTEMMER</h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="table-responsive">
@@ -1866,8 +1868,7 @@
         <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title modaltitle" style="font-weight: bold;">LAURA GORIS - PR &amp; ZEDENMEESTERES
-                    </h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h4 class="modal-title modaltitle" style="font-weight: bold;">LAURA GORIS - PR &amp; ZEDENMEESTERES</h4>
                 </div>
                 <div class="modal-body">
                     <div class="table-responsive">
@@ -1952,8 +1953,7 @@
         <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title modaltitle" style="font-weight: bold;">HANNELIE SOMERS - PR</h4><button
-                        type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h4 class="modal-title modaltitle" style="font-weight: bold;">HANNELIE SOMERS - PR</h4>
                 </div>
                 <div class="modal-body">
                     <div class="table-responsive">
@@ -2034,8 +2034,7 @@
         <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title modaltitle" style="font-weight: bold;">EVA DIELS - FEEST</h4><button
-                        type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h4 class="modal-title modaltitle" style="font-weight: bold;">EVA DIELS - FEEST</h4>
                 </div>
                 <div class="modal-body">
                     <div class="table-responsive">
@@ -2116,8 +2115,7 @@
         <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title modaltitle" style="font-weight: bold;">FLORE KOLOSZEWSKI - FEEST</h4><button
-                        type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h4 class="modal-title modaltitle" style="font-weight: bold;">FLORE KOLOSZEWSKI - FEEST</h4>
                 </div>
                 <div class="modal-body">
                     <div class="table-responsive">
@@ -2198,7 +2196,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title modaltitle" style="font-weight: bold;">YORGI DE SCHRIJVER - WEB &amp; MEDIA
-                    </h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                
                 </div>
                 <div class="modal-body">
                     <div class="table-responsive">
@@ -2291,8 +2289,7 @@
         <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title modaltitle" style="font-weight: bold;">LISE PEPERMANS - SOC</h4><button
-                        type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h4 class="modal-title modaltitle" style="font-weight: bold;">LISE PEPERMANS - SOC</h4>
                 </div>
                 <div class="modal-body">
                     <div class="table-responsive">
@@ -2386,8 +2383,7 @@
         <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title modaltitle" style="font-weight: bold;">DANTE MEEUS - CANTOR</h4><button
-                        type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h4 class="modal-title modaltitle" style="font-weight: bold;">DANTE MEEUS - CANTOR</h4>
                 </div>
                 <div class="modal-body">
                     <div class="table-responsive">
@@ -2485,8 +2481,7 @@
         <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title modaltitle" style="font-weight: bold;">FLEUR STYNEN - METER</h4><button
-                        type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h4 class="modal-title modaltitle" style="font-weight: bold;">FLEUR STYNEN - METER</h4>
                 </div>
                 <div class="modal-body">
                     <div class="table-responsive">
@@ -2576,7 +2571,6 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title modaltitle" style="font-weight: bold;">SEBASTIAAN VERHOEVEN - ERE-CANTOR</h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="table-responsive">
@@ -2663,7 +2657,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./js/script.min.js"></script>
-
+    <script src="./js/bootstrap.bundle.js"></script>
     <!--  isotope js library  -->
     <script src="./vendor/isotope/isotope.min.js"></script>
 
@@ -2675,6 +2669,8 @@
 
     <!--  custom js file  -->
     <script src="./js/main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
 
 
 </body>

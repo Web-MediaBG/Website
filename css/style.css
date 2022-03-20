@@ -525,20 +525,20 @@ td {
     padding: 4rem 0;
 }
 
-.site-main .project-area .button-group button{
-    background: transparent;
+.site-main .project-area .dropdown-menu a{
     border: none;
     font: normal 500 20px/20px var(--roboto);
-    margin-bottom: 2rem;
-    padding: 1rem 2rem;
+    margin-bottom: 0.1rem;
+    padding: 0.5rem 2rem;
     text-transform: uppercase;
 }
 
-.site-main .project-area .button-group button:hover{
+.site-main .project-area .dropdown-menu a:hover{
     box-shadow: var(--box-shadow);
+    cursor: pointer;
 }
 
-.site-main .project-area .button-group button + button{
+.site-main .project-area .dropdown-menu a + a{
     padding-right: 2rem;
 }
 
@@ -648,7 +648,11 @@ td {
 
 footer.footer-area{
     padding: 5rem 0;
-    background: url(../img/footer-bg.png) no-repeat;
+    background-image:
+        url(../img/footer-bg.png);
+    background-size: cover;
+    background-position: top;
+    position: relative;  
 }
 
 footer.footer-area .social h5{

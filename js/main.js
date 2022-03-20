@@ -1,12 +1,12 @@
 $(document).ready(function () {
 
 
-    let $btns = $('.project-area .button-group button');
+    let $btns = $('.project-area .dropdown-menu a');
 
 
     $btns.click(function (e) {
 
-        $('.project-area .button-group button').removeClass('active');
+        $('.project-area .dropdown-menu a').removeClass('active');
         e.target.classList.add('active');
 
         let selector = $(e.target).attr('data-filter');
@@ -16,6 +16,17 @@ $(document).ready(function () {
 
         return false;
     })
+
+    $(function(){
+
+        $(".dropdown-menu a").click(function(){
+    
+          $(".project-area .btn:first-child").text($(this).text());
+          $(".project-area .btn:first-child").val($(this).text());
+    
+       });
+    
+    });
 
     $('.project-area .button-group #btn1').trigger('click');
 
