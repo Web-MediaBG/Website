@@ -28,6 +28,22 @@ $(document).ready(function () {
     
     });
 
+    let $btns2 = $('.project-area .button-group button');
+
+
+    $btns2.click(function (e) {
+
+        $('.project-area .button-group button').removeClass('active');
+        e.target.classList.add('active');
+
+        let selector2 = $(e.target).attr('data-filter');
+        $('.project-area .grid').isotope({
+            filter: selector2
+        });
+
+        return false;
+    })
+
     $('.project-area .button-group #btn1').trigger('click');
 
     $('.project-area .grid .test-popup-link').magnificPopup({

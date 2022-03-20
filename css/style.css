@@ -554,6 +554,10 @@ td {
 
 }
 
+.dropdown-item.active{
+    color: white;
+    background-color: var(--primary-color);
+}
 
 
 /* End Project Area */ 
