@@ -55,7 +55,7 @@
                             <a class="nav-link" href="./Index.html">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./Aboutus.html">Over ons</a>
+                            <a class="nav-link" href="./Overons.html">Over ons</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./Praesidium.html">Praesidium</a>
@@ -150,7 +150,7 @@
         <section class="project-area">
             <div class="container">
                 <div class="project-title pb-5">
-                    <h1 class="text-uppercase title-h1" >Wat doen wij?</h1>
+                    <h1 class="text-uppercase title-h1">Wat doen wij?</h1>
                 </div>
 
                 <div class="button-group" style="display: none;">
@@ -186,7 +186,8 @@
                         <div class="our-project">
                             <div class="img">
                                 <a class="test-popup-link" href="./img/Activiteiten/ASL_Sportevenement.jpeg">
-                                    <img src="./img/Activiteiten/ASL_Sportevenement.jpeg" alt="portfolio-3" class="img-fluid">
+                                    <img src="./img/Activiteiten/ASL_Sportevenement.jpeg" alt="portfolio-3"
+                                        class="img-fluid">
                                 </a>
                             </div>
                             <div class="title py-4">
@@ -273,23 +274,43 @@
                     <h5 class="text-uppercase beating-text">Volg ons</h5>
                     <a href="https://www.facebook.com/Bovisgraficaa/"><i class="fab fa-facebook"></i></a>
                     <a href="https://www.instagram.com/bovis.grafica/"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.youtube.com/channel/UCmgaZgOfldwL-u7MlGYIgUg"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.youtube.com/channel/UCmgaZgOfldwL-u7MlGYIgUg"><i
+                            class="fab fa-youtube"></i></a>
                     <a href="https://discord.gg/bBeqf7j"><i class="fab fa-discord"></i></a>
                 </div>
                 <div class="copyrights text-center">
                     <p class="para">
-                        Copyright ©2022 All rights reserved | This website is made by Yorgi De Schijver
+                        Copyright ©2022 All rights reserved | This website is made by <span id="Yorgi">Yorgi De
+                            Schijver</span>
                     </p>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!--  Back to top button -->
+
+    <!--  Confetti easter egg  -->
+
+    <script src="./js/confetti.js"></script>
+
+    <script>
+        const button = document.getElementById('Yorgi');
+        let count = 0;
+        button.addEventListener('click', function handleClick() {
+            count++;
+            console.info(count)
+
+            if (count >= 3) {
+                confetti.start()
+            }
+        });
+    </script>
+
+    <!--  Back to top button  -->
     <a id="button"></a>
 
-
-
+    
+    
     <!--  Jquery js file  -->
     <script src="./js/jquery.3.4.1.js"></script>
 

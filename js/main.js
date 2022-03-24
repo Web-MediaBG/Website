@@ -48,6 +48,7 @@ $(document).ready(function () {
     })
 
     $('.project-area .dropdown-menu #btn1').trigger('click');
+    $('.project-area .button-group #btn1').trigger('click');
 
     $('.project-area .grid .test-popup-link').magnificPopup({
         type: 'image',
@@ -73,10 +74,10 @@ $(document).ready(function () {
 
     // sticky navigation menu
 
-    let nav_offset_top = $('.header_area').height() + 50;
+    let nav_offset_top = $('.header_area .main-menu').height() + 50;
 
     function navbarFixed() {
-        if ($('.header_area').length) {
+        if ($('.header_area .main-menu').length) {
             $(window).scroll(function () {
                 let scroll = $(window).scrollTop();
                 if (scroll >= nav_offset_top) {

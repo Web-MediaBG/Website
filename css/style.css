@@ -10,8 +10,13 @@
 @import url(./partials/_global.css);
 
 
+.site-main{
+    background-image: url(../img/body-bg.png);
+    background-size: contain;
+}
 
 /* start navigation */ 
+
 
 .header_area .main-menu .navbar .navbar-brand{
     padding: 0 2rem 0 5rem;
@@ -187,6 +192,7 @@
 
 .site-main .about-area{
     padding: 8rem 5rem;
+    
 }
 
 .site-main .about-area .about-title h2 > span{
@@ -198,6 +204,11 @@
 .site-main .about-area .about-title .paragraph > p{
     padding: .4rem 0;
 }
+
+.site-main .about-area .owl-item .client{
+    background-color: white;
+}
+
 
 /* End About Area */ 
 
@@ -217,6 +228,7 @@
 
 .site-main .brand-area .first-row .col-lg-3 > .single-brand{
     border: 1px solid var(--border-color);
+    background-color: white;
     text-align: center;
     padding: 1.8rem;
     margin: 1rem 0;
@@ -300,7 +312,7 @@
 }
 
 .site-main > .services-area .services{
-    background: rgba(248, 252, 253, 0.973);
+    background: rgb(255, 255, 255);
     padding: 2rem 0;
     width: 16rem;
     margin: 5rem .5rem;
@@ -655,13 +667,32 @@ td {
 /* Footer Area */ 
 
 footer.footer-area{
+    margin-top: 5rem;
     padding: 5rem 0;
+    background-color: transparent;
     background-image:
         url(../img/footer-bg.png);
     background-size: cover;
     background-position: top;
     position: relative;  
 }
+
+footer.footer-area::before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/2492239.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.4;
+}
+
+
 
 footer.footer-area .social h5{
     font: normal 500 23px/ 30px var(--roboto);
@@ -670,11 +701,15 @@ footer.footer-area .social h5{
 footer.footer-area .social a > i{
     font-size:22px;
     padding: 2rem;
-    color: var(--border-color);
+    color: rgb(0, 0, 0);
 }
 
 footer.footer-area .social a:hover > i{
     color: var(--primary-color);
+}
+
+footer.footer-area .copyrights p{
+    color: rgb(0, 0, 0);
 }
 
 @keyframes heartFadeInOut 
@@ -711,7 +746,7 @@ footer.footer-area .social a:hover > i{
     animation-iteration-count: infinite;
     animation-duration: 2s;
     animation-direction: alternate;
-  
+    color: rgb(0, 0, 0);
   }
 
 
